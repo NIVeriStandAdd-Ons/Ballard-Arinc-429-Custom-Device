@@ -113,6 +113,7 @@
 			</Item>
 			<Item Name="Async Loop Control.vi" Type="VI" URL="../SubVIs/Async Loop Control.vi"/>
 			<Item Name="Data Ref FGV.vi" Type="VI" URL="../SubVIs/Data Ref FGV.vi"/>
+			<Item Name="Debug_Report NB Records.vi" Type="VI" URL="../SubVIs/Debug_Report NB Records.vi"/>
 			<Item Name="Report_Status_Channels.vi" Type="VI" URL="../SubVIs/Report_Status_Channels.vi"/>
 		</Item>
 		<Item Name="VxWorks" Type="Folder">

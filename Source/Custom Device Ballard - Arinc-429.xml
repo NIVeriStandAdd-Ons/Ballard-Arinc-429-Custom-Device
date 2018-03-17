@@ -5,7 +5,7 @@
     <eng>Ballard - Arinc-429</eng>
     <loc>Ballard - Arinc-429</loc>
   </AddMenu>
-  <Version>1.0.2</Version>
+  <Version>1.0.3</Version>
   <Type>Asynchronous</Type>
   <MaxOccurrence>1</MaxOccurrence>
   <MainPageGUID>dcf168dc-a9fa-4dd1-862e-68da37a31a51</MainPageGUID>
