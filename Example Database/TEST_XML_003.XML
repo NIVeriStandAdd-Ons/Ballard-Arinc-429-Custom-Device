@@ -36,7 +36,7 @@
 
 <!--***************************************	Rx Channels ***************************************-->
 <!--Channel 0: Rx -->
-	<bti:channel429 ID="0" name="Channel 0-Blabla" hardwareChannel="0" monitorMode="Selective">
+	<bti:channel429 ID="0" name="Channel 0" hardwareChannel="0" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="100" name="label 1" labelDecimal="23" monitor="true"/>			
@@ -44,7 +44,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 1: Rx -->
-	<bti:channel429 ID="1" name="Channel 1" hardwareChannel="1" monitorMode="Selective">
+	<bti:channel429 ID="1" name="Channel 1" hardwareChannel="1" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="101" name="label 1" labelDecimal="23" monitor="true"/>
@@ -52,7 +52,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 2: Rx -->
-	<bti:channel429 ID="2" name="Channel 2" hardwareChannel="2" monitorMode="Selective">
+	<bti:channel429 ID="2" name="Channel 2" hardwareChannel="2" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="102" name="label 1" labelDecimal="23" monitor="true"/>
@@ -60,7 +60,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 3: Rx -->
-	<bti:channel429 ID="3" name="Channel 3" hardwareChannel="3" monitorMode="Selective">
+	<bti:channel429 ID="3" name="Channel 3" hardwareChannel="3" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="103" name="label 1" labelDecimal="23" monitor="true"/>	
@@ -69,7 +69,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 4: Rx -->
-	<bti:channel429 ID="4" name="Channel 4" hardwareChannel="4" monitorMode="Selective">
+	<bti:channel429 ID="4" name="Channel 4" hardwareChannel="4" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="104" name="label 1" labelDecimal="23" monitor="true"/>
@@ -78,7 +78,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 5: Rx -->
-	<bti:channel429 ID="5" name="Channel 5" hardwareChannel="5" monitorMode="Selective">
+	<bti:channel429 ID="5" name="Channel 5" hardwareChannel="5" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="105" name="label 1" labelDecimal="23" monitor="true"/>
@@ -87,7 +87,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 6: Rx -->
-	<bti:channel429 ID="6" name="Channel 6" hardwareChannel="6" monitorMode="Selective">
+	<bti:channel429 ID="6" name="Channel 6" hardwareChannel="6" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="106" name="label 1" labelDecimal="23" monitor="true"/>	
@@ -98,7 +98,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 7: Rx -->
-	<bti:channel429 ID="7" name="Channel 7" hardwareChannel="7" monitorMode="Selective">
+	<bti:channel429 ID="7" name="Channel 7" hardwareChannel="7" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="107" name="label 1" labelDecimal="23" monitor="true"/>
@@ -109,7 +109,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 8: Rx -->
-	<bti:channel429 ID="8" name="Channel 8" hardwareChannel="8" monitorMode="Selective">
+	<bti:channel429 ID="8" name="Channel 8" hardwareChannel="8" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="108" name="label 1" labelDecimal="23" monitor="true"/>
@@ -120,7 +120,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 9: Rx -->
-	<bti:channel429 ID="9" name="Channel 9" hardwareChannel="9" monitorMode="Selective">
+	<bti:channel429 ID="9" name="Channel 9" hardwareChannel="9" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="109" name="label 1" labelDecimal="23" monitor="true"/>	
@@ -135,7 +135,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 10: Rx -->
-	<bti:channel429 ID="10" name="Channel 10" hardwareChannel="10" monitorMode="Selective">
+	<bti:channel429 ID="10" name="Channel 10" hardwareChannel="10" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="110" name="label 1" labelDecimal="23" monitor="true"/>
@@ -150,7 +150,7 @@
 		</bti:rxChannel>
 	</bti:channel429>
 <!--Channel 11: Rx -->
-	<bti:channel429 ID="11" name="Channel 11" hardwareChannel="11" monitorMode="Selective">
+	<bti:channel429 ID="11" name="Channel 11" hardwareChannel="11" monitorMode="Selective" channelBufferMaxSizeKB="16384">
 		<bti:rxChannel speedKHz="100">
 			<bti:labels>
 				<bti:label ID="111" name="label 1" labelDecimal="23" monitor="true"/>
