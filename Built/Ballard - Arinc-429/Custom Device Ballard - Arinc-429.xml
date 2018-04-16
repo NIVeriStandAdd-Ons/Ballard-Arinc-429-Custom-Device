@@ -5,7 +5,7 @@
     <eng>Ballard - Arinc-429</eng>
     <loc>Ballard - Arinc-429</loc>
   </AddMenu>
-  <Version>1.0.5</Version>
+  <Version>1.1.0</Version>
   <Type>Asynchronous</Type>
   <MaxOccurrence>1</MaxOccurrence>
   <MainPageGUID>dcf168dc-a9fa-4dd1-862e-68da37a31a51</MainPageGUID>
@@ -55,8 +55,8 @@
 					<GUID>CB66F472-A923-4165-AEBC-C7B766070099</GUID>
 					<Type>Action</Type>
 					<Name>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
@@ -64,11 +64,35 @@
 					</Item2Launch>
 				</MenuItem>
 				<MenuItem>
+					<GUID>24f09b42-caa8-4aeb-84ec-4032bae92de1</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Load Parameters File.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
 					<GUID>CB66F472-A923-4165-AEBC-C7B766070000</GUID>
 					<Type>Action</Type>
 					<Name>
-						<eng>Clear Database Selection</eng>
-						<loc>Clear Database Selection</loc>
+						<eng>Clear All Configurations</eng>
+						<loc>Clear All Configurations</loc>
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
@@ -110,16 +134,62 @@
 					<Type>Action</Type>
 					<ReferencedGUID>CB66F472-A923-4165-AEBC-C7B766070099</ReferencedGUID>
 					<ButtonText>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</ButtonText>
 					<Caption>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</Caption>
 					<TipStrip>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_429_LoadParameters</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\add database.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>24f09b42-caa8-4aeb-84ec-4032bae92de1</ReferencedGUID>
+					<ButtonText>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_429_Separator1</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\Separator.png</Path>
+					</Glyph>
+					<Type>Separator</Type>
+					<ReferencedGUID>e6ceece0-d691-479f-8d57-74e1a70ec346</ReferencedGUID>
+					<Caption>
+						<eng>Sep.</eng>
+						<loc>Sep.</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Sep.</eng>
+						<loc>Sep.</loc>
 					</TipStrip>
 					<Documentation>
 						<eng />
@@ -135,16 +205,16 @@
 					<Type>Action</Type>
 					<ReferencedGUID>CB66F472-A923-4165-AEBC-C7B766070000</ReferencedGUID>
 					<ButtonText>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations</eng>
+						<loc>Clear All Configurations</loc>
 					</ButtonText>
 					<Caption>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations (Hardware and Parameters Configurations)</eng>
+						<loc>Clear All Configurations (Hardware and Parameters Configurations)</loc>
 					</Caption>
 					<TipStrip>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations (Hardware and Parameters Configurations)</eng>
+						<loc>Clear All Configurations (Hardware and Parameters Configurations)</loc>
 					</TipStrip>
 					<Documentation>
 						<eng />
@@ -184,8 +254,8 @@
 					<GUID>CB66F472-A923-4165-AEBC-C7B766070099</GUID>
 					<Type>Action</Type>
 					<Name>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
@@ -193,11 +263,35 @@
 					</Item2Launch>
 				</MenuItem>
 				<MenuItem>
+					<GUID>24f09b42-caa8-4aeb-84ec-4032bae92de1</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Load Parameters File.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
 					<GUID>CB66F472-A923-4165-AEBC-C7B766070000</GUID>
 					<Type>Action</Type>
 					<Name>
-						<eng>Clear Database Selection</eng>
-						<loc>Clear Database Selection</loc>
+						<eng>Clear All Configurations</eng>
+						<loc>Clear All Configurations</loc>
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
@@ -239,16 +333,62 @@
 					<Type>Action</Type>
 					<ReferencedGUID>CB66F472-A923-4165-AEBC-C7B766070099</ReferencedGUID>
 					<ButtonText>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</ButtonText>
 					<Caption>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
 					</Caption>
 					<TipStrip>
-						<eng>Load Database</eng>
-						<loc>Load Database</loc>
+						<eng>Load Hardware Configuration</eng>
+						<loc>Load Hardware Configuration</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_429_LoadParameters</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\add database.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>24f09b42-caa8-4aeb-84ec-4032bae92de1</ReferencedGUID>
+					<ButtonText>
+						<eng>Load Parameters Config.</eng>
+						<loc>Load Parameters Config.</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Load Parameters Config.</eng>
+						<loc>Load Parameters Config.</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Load Parameters Configuration</eng>
+						<loc>Load Parameters Configuration</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>NIVS_429_Separator1</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\Separator.png</Path>
+					</Glyph>
+					<Type>Separator</Type>
+					<ReferencedGUID>e6ceece0-d691-479f-8d57-74e1a70ec346</ReferencedGUID>
+					<Caption>
+						<eng>Sep.</eng>
+						<loc>Sep.</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Sep.</eng>
+						<loc>Sep.</loc>
 					</TipStrip>
 					<Documentation>
 						<eng />
@@ -264,23 +404,23 @@
 					<Type>Action</Type>
 					<ReferencedGUID>CB66F472-A923-4165-AEBC-C7B766070000</ReferencedGUID>
 					<ButtonText>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations</eng>
+						<loc>Clear All Configurations</loc>
 					</ButtonText>
 					<Caption>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations (Hardware and Parameters Configurations)</eng>
+						<loc>Clear All Configurations (Hardware and Parameters Configurations)</loc>
 					</Caption>
 					<TipStrip>
-						<eng>Clear Database</eng>
-						<loc>Clear Database</loc>
+						<eng>Clear All Configurations (Hardware and Parameters Configurations)</eng>
+						<loc>Clear All Configurations (Hardware and Parameters Configurations)</loc>
 					</TipStrip>
 					<Documentation>
 						<eng />
 						<loc />
 					</Documentation>
 				</Button>
-			</ButtonList>
+				</ButtonList>
 			<ActionVIOnLoad>
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Main On Load Action VI.vi</Path>
@@ -338,146 +478,6 @@
         <Type>To Common Doc Dir</Type>
 		<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Word Page.vi</Path>
       </Item2Launch>
-	  <RunTimeMenu>
-				<MenuItem>
-					<GUID>DAA7CC11-B6D4-FBCD-3895-4014999F1774</GUID>
-					<Type>Action</Type>
-					<Name>
-						<eng>Add Data Parameter</eng>
-						<loc>Add Data Parameter</loc>
-					</Name>
-					<Item2Launch>
-						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Add Data Channel.vi</Path>
-					</Item2Launch>
-				</MenuItem>
-				<MenuItem>
-					<GUID>DAA7CC11-B6D4-FBCD-3895-4014999F19E7</GUID>
-					<Type>VI</Type>
-					<Name>
-						<eng>Add Parameter...</eng>
-						<loc>Add Parameter...</loc>
-					</Name>
-					<Item2Launch>
-						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Add Channels.vi</Path>
-					</Item2Launch>
-				</MenuItem>
-				<MenuItem>
-					<GUID>644EA7BF-3EDA-68A5-99E8-463174E574AF</GUID>
-					<Type>Action</Type>
-					<Name>
-						<eng>Add Parameter For Each Bit</eng>
-						<loc>Add Parameter For Each Bit</loc>
-					</Name>
-					<Item2Launch>
-						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Ballard - Arinc-429 - Add All Label Bit Channels.vi</Path>
-					</Item2Launch>
-				</MenuItem>
-				<MenuItem>
-					<GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
-					<Type>Separator</Type>
-					<Name>
-						<eng>.</eng>
-						<loc>.</loc>
-					</Name>
-					<Item2Launch>
-						<Type>Absolute</Type>
-						<Path>.</Path>
-					</Item2Launch>
-				</MenuItem>
-				<MenuItem>
-					<GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
-					<Type>VI</Type>
-					<MinNrOfChilds>1</MinNrOfChilds>
-					<Name>
-						<eng>Delete Multiple Items</eng>
-						<loc>Delete Multiple Items</loc>
-					</Name>
-					<Item2Launch>
-						<Type>Absolute</Type>
-						<Path>Dialogs\Delete Multiple Items.vi</Path>
-					</Item2Launch>
-				</MenuItem>
-			</RunTimeMenu>
-	  <ButtonList>
-				<Button>
-					<ID>NIVS_AIM429_AddDataChannel</ID>
-					<Glyph>
-						<Type>To Application Data Dir</Type>
-						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
-					</Glyph>
-					<Type>Action</Type>
-					<ReferencedGUID>DAA7CC11-B6D4-FBCD-3895-4014999F1774</ReferencedGUID>
-					<ButtonText>
-						<eng>Add Data Parameter</eng>
-						<loc>Add Data Parameter</loc>
-					</ButtonText>
-					<Caption>
-						<eng>Add Data Parameter</eng>
-						<loc>Add Data Parameter</loc>
-					</Caption>
-					<TipStrip>
-						<eng>Add Data Parameter</eng>
-						<loc>Add Data Parameter</loc>
-					</TipStrip>
-					<Documentation>
-						<eng />
-						<loc />
-					</Documentation>
-				</Button>
-				<Button>
-					<ID>NIVS_AIM429_AddLabelChannels</ID>
-					<Glyph>
-						<Type>To Application Data Dir</Type>
-						<Path>System Explorer\Glyphs\NI-XNET Add Signal.png</Path>
-					</Glyph>
-					<Type>Action</Type>
-					<ReferencedGUID>DAA7CC11-B6D4-FBCD-3895-4014999F19E7</ReferencedGUID>
-					<ButtonText>
-						<eng>Add Parameter...</eng>
-						<loc>Add Parameter...</loc>
-					</ButtonText>
-					<Caption>
-						<eng>Add Parameter...</eng>
-						<loc>Add Parameter...</loc>
-					</Caption>
-					<TipStrip>
-						<eng>Add Parameter...</eng>
-						<loc>Add Parameter...</loc>
-					</TipStrip>
-					<Documentation>
-						<eng />
-						<loc />
-					</Documentation>
-				</Button>
-				<Button>
-					<ID>NIVS_AIM429_AddLabelBitChannels</ID>
-					<Glyph>
-						<Type>To Application Data Dir</Type>
-						<Path>System Explorer\Glyphs\NI-XNET Add RawData Channel.png</Path>
-					</Glyph>
-					<Type>Action</Type>
-					<ReferencedGUID>644EA7BF-3EDA-68A5-99E8-463174E574AF</ReferencedGUID>
-					<ButtonText>
-						<eng>Add Parameter For Each Bit</eng>
-						<loc>Add Parameter For Each Bit</loc>
-					</ButtonText>
-					<Caption>
-						<eng>Add Parameter For Each Bit</eng>
-						<loc>Add Parameter For Each Bit</loc>
-					</Caption>
-					<TipStrip>
-						<eng>Add Parameter For Each Bit</eng>
-						<loc>Add Parameter For Each Bit</loc>
-					</TipStrip>
-					<Documentation>
-						<eng />
-						<loc />
-					</Documentation>
-				</Button>
-			</ButtonList>
     </Page>
 	
 	<Page>
@@ -520,7 +520,6 @@
       </Item2Launch>
     </Page>
 
-		
      <Page>
       <Name>
         <eng>Channel Page</eng>

@@ -63,7 +63,9 @@
 			<Item Name="Ballard - Arinc-429 - Add Channels.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Add Channels.vi"/>
 			<Item Name="Ballard - Arinc-429 - Add Data Channel.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Add Data Channel.vi"/>
 			<Item Name="Ballard - Arinc-429 - Clear Database.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Clear Database.vi"/>
+			<Item Name="Ballard - Arinc-429 - Clear Parameters.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Clear Parameters.vi"/>
 			<Item Name="Ballard - Arinc-429 - Load Database.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Load Database.vi"/>
+			<Item Name="Ballard - Arinc-429 - Load Parameters File.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Load Parameters File.vi"/>
 			<Item Name="Ballard - Arinc-429 - Main Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Main Page.vi"/>
 			<Item Name="Ballard Arinc-429 - Initialization VI.vi" Type="VI" URL="../Dynamically Called/Ballard Arinc-429 - Initialization VI.vi"/>
 			<Item Name="ConditionallySerialiaze.vi" Type="VI" URL="../Dynamically Called/ConditionallySerialiaze.vi"/>
@@ -73,17 +75,17 @@
 			<Item Name="Status Section Page.vi" Type="VI" URL="../Dynamically Called/Pages/Status Section Page.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Parse Parameters File" Type="Folder">
+				<Item Name="Arinc429_Parameters_XML_Schema.xsd" Type="Document" URL="../SubVIs/Parse Parameters File/Arinc429_Parameters_XML_Schema.xsd"/>
+				<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../SubVIs/Parse Parameters File/Parameters_Arinc429_XML_Tools.dll"/>
+				<Item Name="Read XML_Parameters_Check File Against Schema.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read XML_Parameters_Check File Against Schema.vi"/>
+				<Item Name="Read_XML-File_002.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read_XML-File_002.vi"/>
+			</Item>
 			<Item Name="Parse XML Ballard" Type="Folder">
 				<Item Name="Ballard_BTI_XML_Deserializer.dll" Type="Document" URL="../SubVIs/Parse XML Ballard/Ballard_BTI_XML_Deserializer.dll"/>
 				<Item Name="BTI.XSD" Type="Document" URL="../SubVIs/Parse XML Ballard/BTI.XSD"/>
 				<Item Name="Check XML File against XSD Schema.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Check XML File against XSD Schema.vi"/>
-				<Item Name="Read XML_000.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_000.vi"/>
-				<Item Name="Read XML_001.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_001.vi"/>
 				<Item Name="Read XML_002.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_002.vi"/>
-				<Item Name="Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
-				<Item Name="Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
-				<Item Name="Read XML_Parse Channels.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_Parse Channels.vi"/>
-				<Item Name="Read XML_Parse returned error.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_Parse returned error.vi"/>
 			</Item>
 			<Item Name="Refresh DB" Type="Folder">
 				<Item Name="Force Rename Item.vi" Type="VI" URL="../SubVIs/Refresh DB/Force Rename Item.vi"/>
@@ -98,14 +100,20 @@
 			<Item Name="Add Custom Device Channel - Offline.vi" Type="VI" URL="../SubVIs/Add Custom Device Channel - Offline.vi"/>
 			<Item Name="Add Custom Device Section - Offline.vi" Type="VI" URL="../SubVIs/Add Custom Device Section - Offline.vi"/>
 			<Item Name="AddParamChannels.vi" Type="VI" URL="../SubVIs/AddParamChannels.vi"/>
+			<Item Name="AddParamChannels_Create one Parameter per Discrete Bit.vi" Type="VI" URL="../SubVIs/AddParamChannels_Create one Parameter per Discrete Bit.vi"/>
+			<Item Name="AddParamChannels_Insert SDI SSM Parity.vi" Type="VI" URL="../SubVIs/AddParamChannels_Insert SDI SSM Parity.vi"/>
 			<Item Name="Build Label Properties.vi" Type="VI" URL="../SubVIs/Build Label Properties.vi"/>
 			<Item Name="Build Param Properties.vi" Type="VI" URL="../SubVIs/Build Param Properties.vi"/>
 			<Item Name="Clear Specific Error.vi" Type="VI" URL="../SubVIs/Clear Specific Error.vi"/>
 			<Item Name="Copy Config Converter.vi" Type="VI" URL="../SubVIs/Copy Config Converter.vi"/>
 			<Item Name="Create Sysdef Tree from DB Channel Clusters.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from DB Channel Clusters.vi"/>
+			<Item Name="Create Sysdef Tree from Parameters Clusters.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters.vi"/>
+			<Item Name="Create Sysdef Tree from Parameters Clusters_Find Channel Ref.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters_Find Channel Ref.vi"/>
+			<Item Name="Create Sysdef Tree from Parameters Clusters_Find Label Ref.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters_Find Label Ref.vi"/>
 			<Item Name="Create Sysdef Tree Labels.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree Labels.vi"/>
 			<Item Name="Create Tx Word Description.vi" Type="VI" URL="../SubVIs/Create Tx Word Description.vi"/>
 			<Item Name="DB Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/DB Import Action - Create Chans.vi"/>
+			<Item Name="Parameters Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/Parameters Import Action - Create Chans.vi"/>
 			<Item Name="Parse DB.vi" Type="VI" URL="../SubVIs/Parse DB/Parse DB.vi"/>
 			<Item Name="PtByPt Counter.vi" Type="VI" URL="../SubVIs/PtByPt Counter.vi"/>
 			<Item Name="Resolve DB Bin File Name and Path.vi" Type="VI" URL="../SubVIs/Resolve DB Bin File Name and Path.vi"/>
