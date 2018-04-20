@@ -292,6 +292,7 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -566,6 +567,8 @@ AddOutputFilter chunkFilter
 			<Item Name="BTICardLV.dll" Type="Document" URL="BTICardLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
+			<Item Name="Insert BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Insert BCD Parameter.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
