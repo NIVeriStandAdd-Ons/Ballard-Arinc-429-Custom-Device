@@ -46,6 +46,5 @@
 		</Item>
 		<Item Name="Types" Type="Folder"/>
 		<Item Name="ARINC_CD-errors.txt" Type="Document" URL="../ARINC_CD-errors.txt"/>
-		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>
 </Library>

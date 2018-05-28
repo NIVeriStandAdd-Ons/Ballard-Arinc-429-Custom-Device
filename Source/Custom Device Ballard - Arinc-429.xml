@@ -5,9 +5,9 @@
     <eng>Ballard - Arinc-429</eng>
     <loc>Ballard - Arinc-429</loc>
   </AddMenu>
-  <Version>1.2.0</Version>
+  <Version>1.3.4</Version>
   <Type>Asynchronous</Type>
-  <MaxOccurrence>1</MaxOccurrence>
+  <MaxOccurrence>64</MaxOccurrence>
   <MainPageGUID>dcf168dc-a9fa-4dd1-862e-68da37a31a51</MainPageGUID>
   <InitializationVI>
     <Type>Action</Type>
@@ -223,16 +223,19 @@
 				</Button>
 			</ButtonList>
 			<ActionVIOnLoad>
-
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Main On Load Action VI.vi</Path>
 			</ActionVIOnLoad>
-			<ActionVIOnCompile>
-
+			<ActionVIOnSave>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\ConditionallySerialiaze.vi</Path>
+				<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Main On Save Action VI.vi</Path>
+			</ActionVIOnSave>
+			<ActionVIOnCompile>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ballard - Arinc-429\Ballard - Arinc-429 Configuration.llb\Main On Compile Action VI.vi</Path>
 			</ActionVIOnCompile>
-    </Page>
+
+	</Page>
 	<Page>
 			<Name>
 				<eng>Ballard - Arinc-429</eng>

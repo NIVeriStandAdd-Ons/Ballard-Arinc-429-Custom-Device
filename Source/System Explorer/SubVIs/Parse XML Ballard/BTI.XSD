@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Created with Liquid XML 2015 Developer Bundle Edition 13.2.2.6003 (http://www.liquid-technologies.com)-->
+<!--Created with Liquid XML 2015 Designer Edition 13.2.2.6003 (http://www.liquid-technologies.com)-->
 <xs:schema xmlns="http://www.ballardtech.com/DatabusSchemas/" xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ballardtech.com/DatabusSchemas/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:attributeGroup name="nameIDGroup">
         <xs:annotation>
@@ -26,7 +26,7 @@
     <xs:attributeGroup name="channelGroup">
         <xs:attribute name="hardwareChannel" default="-1">
             <xs:annotation>
-                <xs:documentation>The actual hardware channel number – each card has multiple cores and each core has multiple channels. -1 may be set as a “Don’t Care” value so the application can determine the channel number dynamically.</xs:documentation>
+                <xs:documentation>The actual hardware channel number - each card has multiple cores and each core has multiple channels. -1 may be set as a “Don't Care” value so the application can set the channel number dynamically.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:int" />
@@ -52,7 +52,7 @@
         </xs:attribute>
         <xs:attribute name="dataWipe" default="Zeroes">
             <xs:annotation>
-                <xs:documentation>The enumeration defines how the data is initialized. Zeroes – the data is initialized to 0, 123 – the data is initialized with incrementing values, CWD – the data is initialized with command word, or None – data initialization is disabled.</xs:documentation>
+                <xs:documentation>The enumeration defines how the data is initialized. Zeroes - the data is initialized to 0, 123 – the data is initialized with incrementing values, CWD - the data is initialized with command word, or None - data initialization is disabled.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -115,7 +115,7 @@
     <xs:attributeGroup name="commandWordOne1553Group">
         <xs:attribute name="taVal1" use="required">
             <xs:annotation>
-                <xs:documentation>The remote terminal address (0 – 31) represented in 5 bits in the command word 1.</xs:documentation>
+                <xs:documentation>The remote terminal address (0 - 31) represented in 5 bits in the command word 1.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -126,7 +126,7 @@
         </xs:attribute>
         <xs:attribute name="saVal1" use="required">
             <xs:annotation>
-                <xs:documentation>The sub address (location) of data (0-31) represented in 5 bits in the command word 1.</xs:documentation>
+                <xs:documentation>The sub address (location) of data (0 - 31) represented in 5 bits in the command word 1.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -150,7 +150,7 @@
     <xs:attributeGroup name="commandWordTwo1553Group">
         <xs:attribute name="taVal2" use="required">
             <xs:annotation>
-                <xs:documentation>The remote terminal address (0 – 31) represented in 5 bits in the command word 2.</xs:documentation>
+                <xs:documentation>The remote terminal address (0 - 31) represented in 5 bits in the command word 2.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -161,7 +161,7 @@
         </xs:attribute>
         <xs:attribute name="saVal2" use="required">
             <xs:annotation>
-                <xs:documentation>The sub address (location) of data (0-31) represented in 5 bits in the command word 2.</xs:documentation>
+                <xs:documentation>The sub address (location) of data (0 - 31) represented in 5 bits in the command word 2.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -238,11 +238,15 @@
                 <xs:restriction base="xs:string">
                     <xs:enumeration value="Undefined" />
                     <xs:enumeration value="1.0" />
+                    <xs:enumeration value="1.1" />
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
     </xs:attributeGroup>
     <xs:complexType name="CoreType">
+        <xs:annotation>
+            <xs:documentation>Represents a (potential) multichannel piece of hardware at its highest level.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="coreConfiguration" type="CoreConfigurationType" minOccurs="0" />
             <xs:element name="channel1553" type="Channel1553Type" minOccurs="0" maxOccurs="unbounded" />
@@ -296,6 +300,11 @@
         <xs:attribute name="perChannelStreaming" default="true" type="xs:boolean">
             <xs:annotation>
                 <xs:documentation>The boolean flag defines whether records recorded by the sequential log are placed into separate buffers for each channel. If true, the protocol libraries (BTI1553Lib “BM” block and BTI429Lib “Rx” block) must be used to process sequential log data that is recorded separately by each channel. If false, the records are in a single buffer for the entire core and must be processed by VIs in the “Sequential Monitor” block of the BTICardLib library. The default value is true.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="useDMA" default="true" type="xs:boolean">
+            <xs:annotation>
+                <xs:documentation>The boolean flag defines whether sequential data is buffered directly on the host computer rather than using the on-Card buffer. Using host memory (value is true) uses less host processing at the cost of a smaller buffer size (1 MB). Using on-Card memory (value is false) uses more host processing with a larger buffer size (16 MB). It is recommended to only set this property to false if perChannelStreaming is also false, since perChannelStreaming effectively adds an additional host buffer for each channel. The default value is true.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
@@ -591,6 +600,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="Channel1553Type">
+        <xs:annotation>
+            <xs:documentation>Represents a 1553 channel at its highest level.</xs:documentation>
+        </xs:annotation>
         <xs:choice>
             <xs:element name="simulation" type="Simulation1553Type" />
             <xs:element name="playback" type="Playback1553Type" />
@@ -648,6 +660,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="Simulation1553Type">
+        <xs:annotation>
+            <xs:documentation>Encapsulates nodes that describe the simulation of MIL-STD-1553-compliant hardware on a bus.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="busMonitor" type="BusMonitor1553Type" minOccurs="0" />
             <xs:element name="busController" type="BusController1553Type" minOccurs="0">
@@ -699,6 +714,9 @@
     </xs:complexType>
     <xs:complexType name="Playback1553Type" />
     <xs:complexType name="BusMonitor1553Type">
+        <xs:annotation>
+            <xs:documentation>Describes how a virtual bus monitor should be simulated by the hardware on the bus.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="rtFilters" type="RTFilters1553Type" minOccurs="0" />
         </xs:sequence>
@@ -711,19 +729,25 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="RTFilters1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of rtFilter elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="rtFilter" type="RTFilter1553Type" minOccurs="0" maxOccurs="32" />
         </xs:sequence>
         <xs:attribute name="invert" type="xs:boolean">
             <xs:annotation>
-                <xs:documentation>The boolean flag defines whether the remote terminal address filters for bus monitoring are inverted. Inverted filtering is subtractive rather than additive which is the default. If only a few RTs/SAs need to be monitored, this allows the filtering selections to be much simpler.</xs:documentation>
+                <xs:documentation>The boolean flag defines whether the remote terminal address filters for bus monitoring are inverted. Inverted filtering is subtractive rather than additive which is the default. If only a few RTs/SAs need to be filtered out, enabling invert allows the filtering selections to be much simpler.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="RTFilter1553Type">
+        <xs:annotation>
+            <xs:documentation>Describes one of the 32 possible filters to be used to monitor a remote terminal as desired.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="rtAddress">
             <xs:annotation>
-                <xs:documentation>The remote terminal address that is specified to monitor onthe bus. If filtering is inverted, this is instead an RT that is specified to not monitor (in combination with bits set in the SA and MC masks below it)</xs:documentation>
+                <xs:documentation>The remote terminal address that is specified to monitor on the bus. If filtering is inverted, this is instead an RT that is specified to not monitor (in combination with bits set in the SA and MC masks below it)</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:int">
@@ -774,6 +798,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="BusController1553Type">
+        <xs:annotation>
+            <xs:documentation>Describes how a virtual bus controller should be simulated by the hardware on the bus.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageBuffers" type="MessageBuffers1553Type" minOccurs="0" />
             <xs:element name="messages" type="Messages1553Type" minOccurs="0" />
@@ -865,11 +892,17 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="MessageBuffers1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of messageBuffer elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageBuffer" type="MessageBuffer1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="MessageBuffer1553Type">
+        <xs:annotation>
+            <xs:documentation>Defines a buffer of data that can be referenced for transmission or reception.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageData" type="MessageData1553Type" minOccurs="0" maxOccurs="1023" />
         </xs:sequence>
@@ -908,6 +941,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="MessageData1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of messageDataWord elements, which specify the actual data in the message buffer using 16-bit raw hexadecimal data word representations. This is used for transmit buffers.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageDataWord" minOccurs="1" maxOccurs="40">
                 <xs:annotation>
@@ -922,11 +958,17 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Messages1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of messageCommand elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageCommand" type="Message1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Message1553Type">
+        <xs:annotation>
+            <xs:documentation>Defines a particular type of message that can be either added to a schedule or sent asynchronously, and associates it with a messageBuffer of data.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:choice>
                 <xs:element name="messageBCRT" type="MessageBCRT1553Type" />
@@ -964,6 +1006,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="Conditions1553Type">
+        <xs:annotation>
+            <xs:documentation>A container for condition elements, which specify what situations dictate a resending of the message or creating an event log depending on the associated element.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="condition" minOccurs="1" maxOccurs="32">
                 <xs:annotation>
@@ -996,19 +1041,31 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="MessageBCRT1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies the necessary parameters for a bus controller to remote terminal message.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="commandWordOne1553Group" />
     </xs:complexType>
     <xs:complexType name="MessageRTBC1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies the necessary parameters for a remote terminal to bus controller message.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="commandWordOne1553Group" />
     </xs:complexType>
     <xs:complexType name="MessageRTRT1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies the necessary parameters for a remote terminal to remote terminal message.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="commandWordOne1553Group" />
         <xs:attributeGroup ref="commandWordTwo1553Group" />
     </xs:complexType>
     <xs:complexType name="MessageMC1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies the necessary parameters to put a mode code message on the bus.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="taVal1">
             <xs:annotation>
-                <xs:documentation>The remote terminal address (0 – 31) represented in 5 bits in the command word.</xs:documentation>
+                <xs:documentation>The remote terminal address (0 - 31) represented in 5 bits in the command word.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -1030,7 +1087,7 @@
         </xs:attribute>
         <xs:attribute name="modeCodeNumber">
             <xs:annotation>
-                <xs:documentation>The mode code number (0 – 31) represented in the last 5 bits in the command word.</xs:documentation>
+                <xs:documentation>The mode code number (0 - 31) represented in the last 5 bits in the command word.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:byte">
@@ -1041,7 +1098,7 @@
         </xs:attribute>
         <xs:attribute name="direction">
             <xs:annotation>
-                <xs:documentation>The direction of mode code command – receive or transmit.</xs:documentation>
+                <xs:documentation>The direction of mode code command - receive or transmit.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -1052,11 +1109,17 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="MinorFrames1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of minorFrame elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="minorFrame" type="MinorFrame1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="MinorFrame1553Type">
+        <xs:annotation>
+            <xs:documentation>A schedule of commands and messages that can be referenced in a majorFrame.</xs:documentation>
+        </xs:annotation>
         <xs:sequence maxOccurs="unbounded">
             <xs:choice>
                 <xs:element name="commandMessageRef" type="SchedMessageRef1553Type" />
@@ -1082,6 +1145,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="AcyclicFrame1553Type">
+        <xs:annotation>
+            <xs:documentation>A schedule of commands and messages that can be transmitted on-demand during a major frame schedule of minor frames. If an acyclic frame is requested by the user program, it will be transmitted at the end of the current minor frame.</xs:documentation>
+        </xs:annotation>
         <xs:sequence maxOccurs="unbounded">
             <xs:choice>
                 <xs:element name="commandMessageRef" type="SchedMessageRef1553Type" />
@@ -1096,9 +1162,12 @@
         <xs:attributeGroup ref="nameIDGroup" />
     </xs:complexType>
     <xs:complexType name="SchedMessageRef1553Type">
+        <xs:annotation>
+            <xs:documentation>References a message and specifies how its transmission should be handled particular to the minor frame.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="messageIDRef" type="xs:int" use="required">
             <xs:annotation>
-                <xs:documentation>The ID reference to a specific message. This ID should match with one of the message IDs defined under the “messages” in order to schedule the message.</xs:documentation>
+                <xs:documentation>The ID reference to a specific message. This ID should match with one of the message IDs defined under the "messages" in order to schedule the message.</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="singleShot" default="false" type="xs:boolean">
@@ -1113,9 +1182,12 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="SchedGap1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a gap to wait before execution of the next command.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="gapTime" use="required">
             <xs:annotation>
-                <xs:documentation>The unique gap time between scheduled messages. Valid gap time is between 4.0 and 819.1.</xs:documentation>
+                <xs:documentation>The gap time between scheduled messages. Valid gap time is between 4.0 and 819.1.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:decimal">
@@ -1127,6 +1199,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="SchedLog1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a command create an event log entry that its execution has occurred.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="eventLogConditions" type="Conditions1553Type" />
         </xs:sequence>
@@ -1137,11 +1212,17 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="MajorFrames1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of majorFrame elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="majorFrame" type="MajorFrame1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="MajorFrame1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a schedule that can be referenced by the channel for execution.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="minorFrameRef" type="MinorFrameRef1553Type" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
@@ -1159,6 +1240,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="MinorFrameRef1553Type">
+        <xs:annotation>
+            <xs:documentation>A reference to a minor frame and thus the set of commands that it contains for execution.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="minorFrameIDRef" type="xs:int" use="required">
             <xs:annotation>
                 <xs:documentation>The ID reference to a specific minor frame. This ID should match with of the minor frame IDs defined under the minor frames in order to schedule the frame.</xs:documentation>
@@ -1166,11 +1250,17 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="AcyclicFrames1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of acyclicFrame elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="acyclicFrame" type="AcyclicFrame1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="RemoteTerminals1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of remoteTerminal elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="remoteTerminal" type="RemoteTerminal1553Type" minOccurs="0" maxOccurs="32">
                 <xs:key name="RTMessageBufferID1553Key">
@@ -1186,6 +1276,9 @@
         <xs:attributeGroup ref="schemaVersionGroup" />
     </xs:complexType>
     <xs:complexType name="RemoteTerminal1553Type">
+        <xs:annotation>
+            <xs:documentation>Allows for definition of the 32 remote terminals available on the hardware.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="messageBuffers" type="MessageBuffers1553Type" minOccurs="0" />
             <xs:element name="subAddress" type="SubAddress1553Type" minOccurs="0" maxOccurs="64" />
@@ -1309,6 +1402,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="SubAddress1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a subaddress on the remote terminal.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="nameIDGroup" />
         <xs:attributeGroup ref="message1553Group" />
         <xs:attribute name="subAddress" use="required">
@@ -1340,6 +1436,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="ModeCode1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a mode code on the remote terminal.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="nameIDGroup" />
         <xs:attributeGroup ref="message1553Group" />
         <xs:attribute name="modeCodeNumber" use="required">
@@ -1371,6 +1470,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="ErrorInjection1553Type">
+        <xs:annotation>
+            <xs:documentation>Allows for the definition of errors that are to be injected on the bus for testing purposes.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="definedErrors" type="DefinedErrors1553Type" minOccurs="0" />
         </xs:sequence>
@@ -1405,11 +1507,17 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="DefinedErrors1553Type">
+        <xs:annotation>
+            <xs:documentation>A collection of definedError elements.</xs:documentation>
+        </xs:annotation>
         <xs:sequence>
             <xs:element name="definedError" type="DefinedError1553Type" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="DefinedError1553Type">
+        <xs:annotation>
+            <xs:documentation>Defines an error that is available for injection.</xs:documentation>
+        </xs:annotation>
         <xs:choice>
             <xs:element name="gapError" type="GapError1553Type" />
             <xs:element name="wordCountError" type="WordCountError1553Type" />
@@ -1422,6 +1530,9 @@
         <xs:attributeGroup ref="nameIDGroup" />
     </xs:complexType>
     <xs:complexType name="GapError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a gap error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
         <xs:attribute name="gapLength" use="required">
             <xs:annotation>
@@ -1437,6 +1548,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="WordCountError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a word count error.</xs:documentation>
+        </xs:annotation>
         <xs:attribute name="type" use="required">
             <xs:annotation>
                 <xs:documentation>The enumeration defines that an absolute word count error or a relative count error will be generated.</xs:documentation>
@@ -1461,6 +1575,9 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="BitCountError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a bit count error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
         <xs:attribute name="value" use="required">
             <xs:annotation>
@@ -1485,10 +1602,13 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="ManchesterError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a Manchester error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
         <xs:attribute name="half" use="required">
             <xs:annotation>
-                <xs:documentation>The enumeration defines whether the manchester error is generated on the first half or second half of bit.</xs:documentation>
+                <xs:documentation>The enumeration defines whether the Manchester error is generated on the first half or second half of bit.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:string">
@@ -1510,12 +1630,21 @@
         </xs:attribute>
     </xs:complexType>
     <xs:complexType name="SyncError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a sync error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
     </xs:complexType>
     <xs:complexType name="ParityError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a parity error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
     </xs:complexType>
     <xs:complexType name="ZeroCrossingError1553Type">
+        <xs:annotation>
+            <xs:documentation>Specifies a zero-crossing error.</xs:documentation>
+        </xs:annotation>
         <xs:attributeGroup ref="wordPos1553Group" />
         <xs:attribute name="type" use="required">
             <xs:annotation>
@@ -2163,7 +2292,7 @@ Each item defined under this node will be scheduled sequentially within the tran
         </xs:annotation>
         <xs:attribute name="gapBitTimes" default="4">
             <xs:annotation>
-                <xs:documentation>The user-specified schedule gap. This allows gap times to be added that don’t need to be associated with a message directly before it in the schedule.</xs:documentation>
+                <xs:documentation>The user-specified schedule gap. This allows gap times to be added that don't need to be associated with a message directly before it in the schedule.</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:unsignedInt">
@@ -2184,7 +2313,7 @@ Each item defined under this node will be scheduled sequentially within the tran
         </xs:annotation>
         <xs:attribute name="dioNum" default="1">
             <xs:annotation>
-                <xs:documentation>The DIO number (1-64) being pulsed to the “ON” state followed by the “OFF” state when this command is encountered in the schedule</xs:documentation>
+                <xs:documentation>The DIO number (1-64) being pulsed to the "ON" state followed by the "OFF" state when this command is encountered in the schedule</xs:documentation>
             </xs:annotation>
             <xs:simpleType>
                 <xs:restriction base="xs:unsignedByte">

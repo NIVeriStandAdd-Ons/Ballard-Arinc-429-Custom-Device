@@ -68,10 +68,11 @@
 			<Item Name="Ballard - Arinc-429 - Load Parameters File.vi" Type="VI" URL="../Dynamically Called/Ballard - Arinc-429 - Load Parameters File.vi"/>
 			<Item Name="Ballard - Arinc-429 - Main Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Main Page.vi"/>
 			<Item Name="Ballard Arinc-429 - Initialization VI.vi" Type="VI" URL="../Dynamically Called/Ballard Arinc-429 - Initialization VI.vi"/>
-			<Item Name="ConditionallySerialiaze.vi" Type="VI" URL="../Dynamically Called/ConditionallySerialiaze.vi"/>
 			<Item Name="Database Refresh Options.vi" Type="VI" URL="../Dynamically Called/Database Refresh Options.vi"/>
 			<Item Name="EnableDisable - Right Click.vi" Type="VI" URL="../Dynamically Called/EnableDisable - Right Click.vi"/>
+			<Item Name="Main On Compile Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Compile Action VI.vi"/>
 			<Item Name="Main On Load Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Load Action VI.vi"/>
+			<Item Name="Main On Save Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Save Action VI.vi"/>
 			<Item Name="Status Section Page.vi" Type="VI" URL="../Dynamically Called/Pages/Status Section Page.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
@@ -104,6 +105,7 @@
 			<Item Name="AddParamChannels_Insert SDI SSM Parity.vi" Type="VI" URL="../SubVIs/AddParamChannels_Insert SDI SSM Parity.vi"/>
 			<Item Name="Build Label Properties.vi" Type="VI" URL="../SubVIs/Build Label Properties.vi"/>
 			<Item Name="Build Param Properties.vi" Type="VI" URL="../SubVIs/Build Param Properties.vi"/>
+			<Item Name="Check Multiple Uses same HW Configuration File.vi" Type="VI" URL="../SubVIs/Check Multiple Uses same HW Configuration File.vi"/>
 			<Item Name="Clear Specific Error.vi" Type="VI" URL="../SubVIs/Clear Specific Error.vi"/>
 			<Item Name="Copy Config Converter.vi" Type="VI" URL="../SubVIs/Copy Config Converter.vi"/>
 			<Item Name="Create Sysdef Tree from DB Channel Clusters.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from DB Channel Clusters.vi"/>
@@ -114,11 +116,15 @@
 			<Item Name="Create Tx Word Description.vi" Type="VI" URL="../SubVIs/Create Tx Word Description.vi"/>
 			<Item Name="DB Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/DB Import Action - Create Chans.vi"/>
 			<Item Name="Parameters Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/Parameters Import Action - Create Chans.vi"/>
+			<Item Name="Parse Channels.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Channels.vi"/>
 			<Item Name="Parse DB.vi" Type="VI" URL="../SubVIs/Parse DB/Parse DB.vi"/>
+			<Item Name="Parse Tree Labels.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Tree Labels.vi"/>
+			<Item Name="Parse Tree Parameters.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Tree Parameters.vi"/>
 			<Item Name="PtByPt Counter.vi" Type="VI" URL="../SubVIs/PtByPt Counter.vi"/>
 			<Item Name="Resolve DB Bin File Name and Path.vi" Type="VI" URL="../SubVIs/Resolve DB Bin File Name and Path.vi"/>
-			<Item Name="Setup Dependencies.vi" Type="VI" URL="../SubVIs/Setup Dependencies.vi"/>
+			<Item Name="Search for Channel FIFO Index.vi" Type="VI" URL="../SubVIs/Search for Channel FIFO Index.vi"/>
 			<Item Name="Update Deploying Dialog Box.vi" Type="VI" URL="../SubVIs/Update Deploying Dialog Box.vi"/>
+			<Item Name="Update HW Configuration File Dependency.vi" Type="VI" URL="../SubVIs/Update HW Configuration File Dependency.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>
 	</Item>
