@@ -24,6 +24,6 @@ type = 'githubRelease'
 
 [package]
 type = 'nipkg'
-name = 'Ballard-Arinc-429-Custom-Device-{veristand_version}'
+name = 'ballard-arinc-429-custom-device-{veristand_version}'
 dev_xml_path = 'Source\Custom Device Ballard - Arinc-429.xml'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
