@@ -1,4 +1,4 @@
-Package: ballard-arinc-429-custom-device-{veristand_version}
+Package: ballard_arinc_429_custom_device-{veristand_version}
 Version: {nipkg_version}
 Architecture: windows_x64
 Maintainer: National Instruments <support@ni.com>
