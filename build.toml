@@ -1,6 +1,6 @@
 [archive]
 build_output_dir = 'Built'
-archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\ballard_arinc_429_custom_device'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\ballard-arinc-429-custom-device'
 
 [projects.cd]
 path = 'Source\Ballard Arinc-429 Custom Device.lvproj'
@@ -26,6 +26,6 @@ type = 'githubRelease'
 
 [package]
 type = 'nipkg'
-name = 'ballard_arinc_429_custom_device-{veristand_version}'
+name = 'ballard-arinc-429-custom-device-{veristand_version}'
 dev_xml_path = 'Source\Custom Device Ballard - Arinc-429.xml'
 install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
