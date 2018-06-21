@@ -1,6 +1,6 @@
 [archive]
 build_output_dir = 'Built'
-archive_location = '\\us-aus-hilbuild\builds\lru-architecture\custom devices\Ballard-Arinc-429-Custom-Device'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\Ballard-Arinc-429-Custom-Device'
 
 [projects.cd]
 path = 'Source\Ballard Arinc-429 Custom Device.lvproj'
