@@ -2,21 +2,28 @@
 
 **Ballard ARINC 429 Custom Device** allows users to use the [Ballard ARINC 429 devices](http://www.ni.com/en-ca/shop/select/pxi-arinc-429-interface-module) inside NI VeriStand. This is an avionic interface bus standard.
 
-This Custom Device supports only one core maximum.
 
 ### LabVIEW Version ###
 
-LabVIEW 2017
+LabVIEW 2016
 
 ### Built Availability ###
 
-Builds not available.
+Builds available for VeriStand 2016 & 2017 under releases.
 
 ### Quality, Limitations ###
 
 This IP is new.
 
 ### Dependencies ###
+
+[Astronics Ballard LabVIEW Driver 1.1.0.6 or Higher] http://www.ni.com/download/ballard-pxie-omnibus-ii-1.1/7645/en/
+
+[OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_error?repo_url=http://www.jkisoft.com/packages
+
+[OpenG MD5 Digest Library 4.1.1.10 or Higher] vipm://oglib_md5?repo_url=http://www.jkisoft.com/packages
+
+VIs must be renamed in BTI429LV.lvlib to prevent naming collision during compilation see User Readme.rtf
 
 
 ### License ###
