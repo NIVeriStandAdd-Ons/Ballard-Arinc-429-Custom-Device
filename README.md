@@ -9,7 +9,7 @@ LabVIEW 2016
 
 ### Built Availability ###
 
-Builds available for VeriStand 2016 & 2017 under releases.
+Builds available for VeriStand 2016 , 2017 & 2018 under releases.
 
 ### Quality, Limitations ###
 
