@@ -19,7 +19,7 @@ This IP is new.
 
 [Astronics Ballard LabVIEW Driver 1.1.0.6 or Higher] http://www.ni.com/download/ballard-pxie-omnibus-ii-1.1/7645/en/
 
-[OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_error?repo_url=http://www.jkisoft.com/packages
+[OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
 
 [OpenG MD5 Digest Library 4.1.1.10 or Higher] vipm://oglib_md5?repo_url=http://www.jkisoft.com/packages
 
