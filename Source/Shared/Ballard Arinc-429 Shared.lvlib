@@ -33,17 +33,24 @@
 	<Property Name="Serialized ACL" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!A1%!!!@````]!!".V&lt;H.J:WZF:#"C?82F)'&amp;S=G&amp;Z!!%!!1!!!!A)!!!!#!!!!!!!!!!</Property>
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Shared" Type="Folder">
-		<Item Name="Controls and Global" Type="Folder">
+		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Global.vi" Type="VI" URL="../Controls and Global/Global.vi"/>
+			<Item Name="Word to double.vi" Type="VI" URL="../Word to double.vi"/>
+		</Item>
+		<Item Name="Types" Type="Folder">
+			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Controls and Global/Compiled.Settings.ctl"/>
+			<Item Name="Initialization Method.ctl" Type="VI" URL="../Controls and Global/Initialization Method.ctl"/>
 			<Item Name="Label.ctl" Type="VI" URL="../Controls and Global/Label.ctl"/>
 			<Item Name="Number of Bits.ctl" Type="VI" URL="../Controls and Global/Number of Bits.ctl"/>
+			<Item Name="RT HW Channel.ctl" Type="VI" URL="../Controls and Global/RT HW Channel.ctl"/>
+			<Item Name="RT Label Settings.ctl" Type="VI" URL="../Controls and Global/RT Label Settings.ctl"/>
+			<Item Name="RT Param Setting.ctl" Type="VI" URL="../Controls and Global/RT Param Setting.ctl"/>
+			<Item Name="RT Word Settings.ctl" Type="VI" URL="../Controls and Global/RT Word Settings.ctl"/>
 			<Item Name="Specify module by.ctl" Type="VI" URL="../Controls and Global/Specify module by.ctl"/>
 			<Item Name="Start Bit.ctl" Type="VI" URL="../Controls and Global/Start Bit.ctl"/>
 			<Item Name="transferPeriod.ctl" Type="VI" URL="../Controls and Global/transferPeriod.ctl"/>
 			<Item Name="TransferType.ctl" Type="VI" URL="../Controls and Global/TransferType.ctl"/>
-			<Item Name="Word to double.vi" Type="VI" URL="../Word to double.vi"/>
 		</Item>
-		<Item Name="Types" Type="Folder"/>
 		<Item Name="ARINC_CD-errors.txt" Type="Document" URL="../ARINC_CD-errors.txt"/>
 	</Item>
 </Library>

@@ -38,6 +38,17 @@
 										</xs:restriction>
 									</xs:simpleType>
 								</xs:element>
+								<xs:element name="sdi"  maxOccurs="1" minOccurs="0" default="All">
+									 <xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="All" />
+											<xs:enumeration value="00" />
+											<xs:enumeration value="01" />
+											<xs:enumeration value="10" />
+											<xs:enumeration value="11" />
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
 								<xs:element type="xs:boolean" name="createSDIChannel" maxOccurs="1" minOccurs="0" default="false"/>
 								<xs:element type="xs:boolean" name="createSSMChannel" maxOccurs="1" minOccurs="0" default="false"/>
 								<xs:element type="xs:boolean" name="createParityChannel" maxOccurs="1" minOccurs="0" default="false"/>

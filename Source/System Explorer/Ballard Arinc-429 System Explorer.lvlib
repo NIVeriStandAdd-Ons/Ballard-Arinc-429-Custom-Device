@@ -52,8 +52,10 @@
 				<Item Name="Ballard - Arinc-429 - ARINC Channel Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - ARINC Channel Page.vi"/>
 				<Item Name="Ballard - Arinc-429 - Inputs Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Inputs Page.vi"/>
 				<Item Name="Ballard - Arinc-429 - Label Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Label Page.vi"/>
+				<Item Name="Ballard - Arinc-429 - Label TimeStamp Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Label TimeStamp Page.vi"/>
 				<Item Name="Ballard - Arinc-429 - Outputs Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Outputs Page.vi"/>
 				<Item Name="Ballard - Arinc-429 - Parameter Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Parameter Page.vi"/>
+				<Item Name="Ballard - Arinc-429 - Status Section Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Status Section Page.vi"/>
 				<Item Name="Ballard - Arinc-429 - Word Page.vi" Type="VI" URL="../Dynamically Called/Pages/Ballard - Arinc-429 - Word Page.vi"/>
 			</Item>
 			<Item Name="ARINC 429 - Add Single TimeStamp Channel.vi" Type="VI" URL="../Dynamically Called/ARINC 429 - Add Single TimeStamp Channel.vi"/>
@@ -72,20 +74,20 @@
 			<Item Name="Main On Compile Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Compile Action VI.vi"/>
 			<Item Name="Main On Load Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Load Action VI.vi"/>
 			<Item Name="Main On Save Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Save Action VI.vi"/>
-			<Item Name="Status Section Page.vi" Type="VI" URL="../Dynamically Called/Pages/Status Section Page.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Parse Parameters File" Type="Folder">
 				<Item Name="Arinc429_Parameters_XML_Schema.xsd" Type="Document" URL="../SubVIs/Parse Parameters File/Arinc429_Parameters_XML_Schema.xsd"/>
 				<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="../SubVIs/Parse Parameters File/Parameters_Arinc429_XML_Tools.dll"/>
 				<Item Name="Read XML_Parameters_Check File Against Schema.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read XML_Parameters_Check File Against Schema.vi"/>
-				<Item Name="Read_XML-File_002.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read_XML-File_002.vi"/>
+				<Item Name="Read_XML_Parameters File_002.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read_XML_Parameters File_002.vi"/>
 			</Item>
 			<Item Name="Parse XML Ballard" Type="Folder">
 				<Item Name="Ballard_BTI_XML_Deserializer.dll" Type="Document" URL="../SubVIs/Parse XML Ballard/Ballard_BTI_XML_Deserializer.dll"/>
 				<Item Name="BTI.XSD" Type="Document" URL="../SubVIs/Parse XML Ballard/BTI.XSD"/>
 				<Item Name="Check XML File against XSD Schema.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Check XML File against XSD Schema.vi"/>
-				<Item Name="Read XML_002.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML_002.vi"/>
+				<Item Name="Read XML HW Configuration File_002.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_002.vi"/>
+				<Item Name="Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi"/>
 			</Item>
 			<Item Name="Refresh DB" Type="Folder">
 				<Item Name="Force Rename Item.vi" Type="VI" URL="../SubVIs/Refresh DB/Force Rename Item.vi"/>
@@ -111,20 +113,26 @@
 			<Item Name="Create Sysdef Tree from Parameters Clusters.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters.vi"/>
 			<Item Name="Create Sysdef Tree from Parameters Clusters_Find Channel Ref.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters_Find Channel Ref.vi"/>
 			<Item Name="Create Sysdef Tree from Parameters Clusters_Find Label Ref.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters_Find Label Ref.vi"/>
+			<Item Name="Create Sysdef Tree from Parameters Clusters_Find Label Refs.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from Parameters Clusters_Find Label Refs.vi"/>
 			<Item Name="Create Sysdef Tree Labels.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree Labels.vi"/>
 			<Item Name="Create Tx Word Description.vi" Type="VI" URL="../SubVIs/Create Tx Word Description.vi"/>
 			<Item Name="DB Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/DB Import Action - Create Chans.vi"/>
+			<Item Name="On Compile - Acyclic Tx - Get Parameters Channels Refs.vi" Type="VI" URL="../SubVIs/On Compile - Acyclic Tx - Get Parameters Channels Refs.vi"/>
+			<Item Name="On Compile - Acyclic Tx - Get Trigger Channels Refs.vi" Type="VI" URL="../SubVIs/On Compile - Acyclic Tx - Get Trigger Channels Refs.vi"/>
+			<Item Name="On Compile - Cyclic Tx - Get Disable Channels Refs.vi" Type="VI" URL="../SubVIs/On Compile - Cyclic Tx - Get Disable Channels Refs.vi"/>
+			<Item Name="On Compile - Cyclic Tx - Get Parameters Channels Refs.vi" Type="VI" URL="../SubVIs/On Compile - Cyclic Tx - Get Parameters Channels Refs.vi"/>
+			<Item Name="On Compile - Get Asynchronous Channels Status Block Refs.vi" Type="VI" URL="../SubVIs/On Compile - Get Asynchronous Channels Status Block Refs.vi"/>
 			<Item Name="Parameters Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/Parameters Import Action - Create Chans.vi"/>
-			<Item Name="Parse Channels.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Channels.vi"/>
+			<Item Name="Parse Channels.vi" Type="VI" URL="../SubVIs/Parse Channels.vi"/>
 			<Item Name="Parse DB.vi" Type="VI" URL="../SubVIs/Parse DB/Parse DB.vi"/>
-			<Item Name="Parse Tree Labels.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Tree Labels.vi"/>
-			<Item Name="Parse Tree Parameters.vi" Type="VI" URL="../../RT Driver/SubVIs/Init/Parse Tree Parameters.vi"/>
+			<Item Name="Parse Tree Labels.vi" Type="VI" URL="../SubVIs/Parse Tree Labels.vi"/>
+			<Item Name="Parse Tree Parameters.vi" Type="VI" URL="../SubVIs/Parse Tree Parameters.vi"/>
 			<Item Name="PtByPt Counter.vi" Type="VI" URL="../SubVIs/PtByPt Counter.vi"/>
 			<Item Name="Resolve DB Bin File Name and Path.vi" Type="VI" URL="../SubVIs/Resolve DB Bin File Name and Path.vi"/>
+			<Item Name="Search for Channel Data Reference.vi" Type="VI" URL="../SubVIs/Search for Channel Data Reference.vi"/>
 			<Item Name="Search for Channel FIFO Index.vi" Type="VI" URL="../SubVIs/Search for Channel FIFO Index.vi"/>
 			<Item Name="Update Deploying Dialog Box.vi" Type="VI" URL="../SubVIs/Update Deploying Dialog Box.vi"/>
 			<Item Name="Update HW Configuration File Dependency.vi" Type="VI" URL="../SubVIs/Update HW Configuration File Dependency.vi"/>
 		</Item>
-		<Item Name="Types" Type="Folder"/>
 	</Item>
 </Library>

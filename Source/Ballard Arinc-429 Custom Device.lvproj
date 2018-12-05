@@ -21,21 +21,16 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
-			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
+			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
-			<Item Name="Print NIVS Debug String.vi" Type="VI" URL="/D/Ballard-Arinc-429-Custom-Device/Source/Utility/Print NIVS Debug String.vi"/>
 		</Item>
 		<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../Shared/Ballard Arinc-429 Shared.lvlib"/>
 		<Item Name="Ballard Arinc-429 System Explorer.lvlib" Type="Library" URL="../System Explorer/Ballard Arinc-429 System Explorer.lvlib"/>
 		<Item Name="Custom Device Ballard - Arinc-429.xml" Type="Document" URL="../Custom Device Ballard - Arinc-429.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="BTI429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTI429Lib/BTI429LV.lvlib"/>
-				<Item Name="BTICardLV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTICardLib/BTICardLV.lvlib"/>
-			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 1D Array (Boolean)__ogtk.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 1D Array (CDB)__ogtk.vi"/>
@@ -249,8 +244,8 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Create_1MHz_TSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/TimedLoop/scheduler/LVUserAPI/_suppVIs/Create_1MHz_TSource.vi"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -278,11 +273,9 @@
 				<Item Name="MD5Checksum pad.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum pad.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="RT Debug String.vi" Type="VI" URL="/&lt;vilib&gt;/rtutility.llb/RT Debug String.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -294,25 +287,11 @@
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="TraceTool Start Trace.vi" Type="VI" URL="/&lt;vilib&gt;/tracetool.llb/TraceTool Start Trace.vi"/>
-				<Item Name="TraceTool Stop Trace and Save.vi" Type="VI" URL="/&lt;vilib&gt;/tracetool.llb/TraceTool Stop Trace and Save.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Ballard Arinc-429 Engine.lvlib" Type="Library" URL="../RT Driver/Ballard Arinc-429 Engine.lvlib"/>
-			<Item Name="Ballard_BTI_XML_Deserializer.dll" Type="Document" URL="/D/Ballard-Arinc-429-Custom-Device/Source/System Explorer/SubVIs/Parse XML Ballard/Ballard_BTI_XML_Deserializer.dll"/>
-			<Item Name="BTI429LV.dll" Type="Document" URL="BTI429LV.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="BTICardLV.dll" Type="Document" URL="BTICardLV.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
-			<Item Name="Insert BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Insert BCD Parameter.vi"/>
-			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -322,8 +301,13 @@
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="/D/Ballard-Arinc-429-Custom-Device/Source/System Explorer/SubVIs/Parse Parameters File/Parameters_Arinc429_XML_Tools.dll"/>
 			<Item Name="Parse_Parameter.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Parse_Parameter.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels.vi"/>
+			<Item Name="Read XML Parameters File_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data.vi"/>
+			<Item Name="Read XML Parameters File_Parse Read Data_Convert sdi element.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data_Convert sdi element.vi"/>
 			<Item Name="Read XML_Checks_Check Presence of labelOctal and labelDecimal.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Checks_Check Presence of labelOctal and labelDecimal.vi"/>
 			<Item Name="Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
 			<Item Name="Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
@@ -333,13 +317,12 @@
 			<Item Name="Read XML_Extra Checks_Check Discrete Parameters Names.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Discrete Parameters Names.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Label Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Label Uniqueness For Each hardWareChannel.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Name Uniqueness.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Name Uniqueness.vi"/>
+			<Item Name="Read XML_Extra Checks_Check Parameter Name Uniqueness_create SDI string.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Name Uniqueness_create SDI string.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Parity Bit Tx.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Parity Bit Tx.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Range of Bits Used.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Range of Bits Used.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter startBit Tx.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter startBit Tx.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Tx Channels Default Values Presence.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Tx Channels Default Values Presence.vi"/>
-			<Item Name="Read XML_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Parse Channels.vi"/>
 			<Item Name="Read XML_Parse Dot Net Error.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Parse Dot Net Error.vi"/>
-			<Item Name="Read XML_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Parse Read Data.vi"/>
 			<Item Name="Read XML_Parse returned error from Assembly Call.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Parse returned error from Assembly Call.vi"/>
 			<Item Name="XML_Channel.ctl" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/XML_Channel.ctl"/>
 			<Item Name="XML_Label.ctl" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/XML_Label.ctl"/>
@@ -426,7 +409,7 @@
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
 		<Property Name="alias.value" Type="Str">10.1.130.22</Property>
-		<Property Name="CCSymbols" Type="Str">OS,PharLap;CPU,x86;debug,false;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,PharLap;CPU,x86;debug,false;Run_Async_VI,True;Enable_Ballard_Calls,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -501,8 +484,8 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="NI VeriStand APIs" Type="Folder">
-			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
-			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
+			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+			<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 		</Item>
 		<Item Name="Ballard Arinc-429 Engine.lvlib" Type="Library" URL="../RT Driver/Ballard Arinc-429 Engine.lvlib"/>
 		<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../Shared/Ballard Arinc-429 Shared.lvlib"/>
@@ -722,10 +705,10 @@ AddOutputFilter chunkFilter
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="compatOverwrite.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOverwrite.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Create_1MHz_TSource.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/TimedLoop/scheduler/LVUserAPI/_suppVIs/Create_1MHz_TSource.vi"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
+				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -754,7 +737,6 @@ AddOutputFilter chunkFilter
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -771,14 +753,12 @@ AddOutputFilter chunkFilter
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="TraceTool Start Trace.vi" Type="VI" URL="/&lt;vilib&gt;/tracetool.llb/TraceTool Start Trace.vi"/>
-				<Item Name="TraceTool Stop Trace and Save.vi" Type="VI" URL="/&lt;vilib&gt;/tracetool.llb/TraceTool Stop Trace and Save.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Ballard Arinc-429 System Explorer.lvlib" Type="Library" URL="../System Explorer/Ballard Arinc-429 System Explorer.lvlib"/>
-			<Item Name="Ballard_BTI_XML_Deserializer.dll" Type="Document" URL="/D/Ballard-Arinc-429-Custom-Device/Source/System Explorer/SubVIs/Parse XML Ballard/Ballard_BTI_XML_Deserializer.dll"/>
 			<Item Name="BTI429LV.dll" Type="Document" URL="BTI429LV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -788,9 +768,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
 			<Item Name="Insert BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Insert BCD Parameter.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -800,8 +777,13 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Parameters_Arinc429_XML_Tools.dll" Type="Document" URL="/D/Ballard-Arinc-429-Custom-Device/Source/System Explorer/SubVIs/Parse Parameters File/Parameters_Arinc429_XML_Tools.dll"/>
 			<Item Name="Parse_Parameter.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Parse_Parameter.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels.vi"/>
+			<Item Name="Read XML Parameters File_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data.vi"/>
+			<Item Name="Read XML Parameters File_Parse Read Data_Convert sdi element.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data_Convert sdi element.vi"/>
 			<Item Name="Read XML_Checks_Check Presence of labelOctal and labelDecimal.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Checks_Check Presence of labelOctal and labelDecimal.vi"/>
 			<Item Name="Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Convert Rx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
 			<Item Name="Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Convert Tx XML SDI Element to SDIVAlue and SDI_Enabled.vi"/>
@@ -811,13 +793,12 @@ AddOutputFilter chunkFilter
 			<Item Name="Read XML_Extra Checks_Check Discrete Parameters Names.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Discrete Parameters Names.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Label Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Label Uniqueness For Each hardWareChannel.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Name Uniqueness.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Name Uniqueness.vi"/>
+			<Item Name="Read XML_Extra Checks_Check Parameter Name Uniqueness_create SDI string.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Name Uniqueness_create SDI string.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Parity Bit Tx.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Parity Bit Tx.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter Range of Bits Used.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter Range of Bits Used.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Parameter startBit Tx.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Parameter startBit Tx.vi"/>
 			<Item Name="Read XML_Extra Checks_Check Tx Channels Default Values Presence.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Extra Checks_Check Tx Channels Default Values Presence.vi"/>
-			<Item Name="Read XML_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Parse Channels.vi"/>
 			<Item Name="Read XML_Parse Dot Net Error.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Parse Dot Net Error.vi"/>
-			<Item Name="Read XML_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML_Parse Read Data.vi"/>
 			<Item Name="Read XML_Parse returned error from Assembly Call.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML_Parse returned error from Assembly Call.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -846,7 +827,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/Pharlap/Data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{7A7BAD70-CB1D-454F-A3E8-09B6D1BA45F5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{859D30CF-770A-4EB9-8ED4-0D57B8A0B69F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
