@@ -13,7 +13,7 @@ Builds available for VeriStand 2016 , 2017 & 2018 under releases.
 
 ### Quality, Limitations ###
 
-This IP is new.
+This IP is new. 
 
 ### Dependencies ###
 
