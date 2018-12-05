@@ -49,7 +49,7 @@
 			<bti:messages>
 				<bti:message ID="134" name="label 134" messageBufferIDRef="128" minRate="1000" maxRate="1000" labelDecimal="134">
 					<bti:messageBuffers>
-						<bti:messageBuffer ID="1" name="MessageBuffer">
+						<bti:messageBuffer ID="128" name="MessageBuffer">
 							<bti:rawData>AAAAAAAA</bti:rawData>
 						</bti:messageBuffer>
 					</bti:messageBuffers>
