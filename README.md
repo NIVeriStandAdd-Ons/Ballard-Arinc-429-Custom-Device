@@ -23,6 +23,8 @@ This IP is new.
 
 [OpenG MD5 Digest Library 4.1.1.10 or Higher] vipm://oglib_md5?repo_url=http://www.jkisoft.com/packages
 
+[NI VeriStand Addon Inline-Async-APIs 1.0.0 or Higher] https://github.com/ni/niveristand-custom-device-inline-async-api/releases/tag/v1.0.0
+
 VIs must be renamed in BTI429LV.lvlib to prevent naming collision during compilation see User Readme.rtf
 
 
