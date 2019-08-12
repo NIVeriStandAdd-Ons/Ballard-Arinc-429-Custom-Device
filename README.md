@@ -9,15 +9,19 @@ LabVIEW 2016
 
 ### Built Availability ###
 
-Builds available for VeriStand 2016 , 2017 & 2018 under releases.
+Builds available for VeriStand 2016 , 2017 , 2018 & 2019 under releases.
 
 ### Quality, Limitations ###
 
 This IP is new. 
 
-### Dependencies ###
+### Built Dependencies ###
 
-[Astronics Ballard LabVIEW Driver 1.1.2.1 or Higher] http://www.ni.com/download/ballard-pxie-omnibus-ii-1.1/7645/en/
+[Astronics Ballard LabVIEW Driver 1.2.0.2 or Higher] http://www.ni.com/download/ballard-pxie-omnibus-ii-1.2.0/8336/en/
+
+### Source Dependencies ###
+
+[Astronics Ballard LabVIEW Driver 1.2.0.2 or Higher] http://www.ni.com/download/ballard-pxie-omnibus-ii-1.2.0/8336/en/
 
 [OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
 
@@ -26,7 +30,6 @@ This IP is new.
 [NI VeriStand Addon Inline-Async-APIs 1.0.0 or Higher] https://github.com/ni/niveristand-custom-device-inline-async-api/releases/tag/v1.0.0
 
 VIs must be renamed in BTI429LV.lvlib to prevent naming collision during compilation see User Readme.rtf
-
 
 ### License ###
 
