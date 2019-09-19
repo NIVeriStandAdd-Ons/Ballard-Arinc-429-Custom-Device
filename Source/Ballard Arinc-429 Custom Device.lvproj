@@ -27,10 +27,15 @@
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
 		</Item>
+		<Item Name="Ballard Arinc-429 Engine.lvlib" Type="Library" URL="../RT Driver/Ballard Arinc-429 Engine.lvlib"/>
 		<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../Shared/Ballard Arinc-429 Shared.lvlib"/>
 		<Item Name="Ballard Arinc-429 System Explorer.lvlib" Type="Library" URL="../System Explorer/Ballard Arinc-429 System Explorer.lvlib"/>
+		<Item Name="BTICardLV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTICardLib/BTICardLV.lvlib"/>
 		<Item Name="Custom Device Ballard - Arinc-429.xml" Type="Document" URL="../Custom Device Ballard - Arinc-429.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="BTI429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTI429Lib/BTI429LV.lvlib"/>
+			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 1D Array (Boolean)__ogtk.vi"/>
 				<Item Name="Delete Elements from 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 1D Array (CDB)__ogtk.vi"/>
@@ -245,6 +250,7 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -276,6 +282,7 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="RT Debug String.vi" Type="VI" URL="/&lt;vilib&gt;/rtutility.llb/RT Debug String.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -289,9 +296,17 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="BTI429LV.dll" Type="Document" URL="BTI429LV.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="BTICardLV.dll" Type="Document" URL="BTICardLV.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
+			<Item Name="Insert BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Insert BCD Parameter.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -348,7 +363,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{070C9F20-3501-4F7B-B856-819CBBE53E11}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B6B77CD0-DCD5-4BF1-BD3D-152B8F098E3A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -402,6 +417,41 @@
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Custom Device Ballard - Arinc-429.xml</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+			</Item>
+			<Item Name="Engine Release" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{EC43BDD7-0C1C-4657-A3DA-783B643C8B29}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Windows.llb</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{726B6852-D3CA-48ED-B20B-09CB2E61F58D}</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Windows.llb</Property>
+				<Property Name="Destination[0].type" Type="Str">LLB</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/Ballard - Arinc-429/Data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E541A0F6-25F4-46FC-8693-19B972A672B3}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Ballard Arinc-429 Engine.lvlib/Ballard - Arinc-429 RT Driver VI.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/BTICardLV.lvlib/Private/Utility/Build Last Error Info.vi</Property>
+				<Property Name="Source[2].newName" Type="Str">BTI_Build Last Error Info.vi</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/BTICardLV.lvlib/Private/Utility/Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[3].newName" Type="Str">BTI_Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/BTICardLV.lvlib/Public/Controls/Error Info.ctl</Property>
+				<Property Name="Source[4].newName" Type="Str">BTI_Error Info.ctl</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
 			</Item>
 		</Item>
@@ -489,10 +539,10 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Ballard Arinc-429 Engine.lvlib" Type="Library" URL="../RT Driver/Ballard Arinc-429 Engine.lvlib"/>
 		<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../Shared/Ballard Arinc-429 Shared.lvlib"/>
+		<Item Name="BTICardLV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTICardLib/BTICardLV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="BTI429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTI429Lib/BTI429LV.lvlib"/>
-				<Item Name="BTICardLV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTICardLib/BTICardLV.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Delete Elements from 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Delete Elements from 1D Array (Boolean)__ogtk.vi"/>
@@ -827,7 +877,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/Pharlap/Data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{859D30CF-770A-4EB9-8ED4-0D57B8A0B69F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0FE4D704-4FB0-44AB-9BCC-44DCD53D12A1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
@@ -864,7 +914,16 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target/Ballard Arinc-429 Engine.lvlib/Ballard - Arinc-429 RT Driver VI.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/RT PXI Target/BTICardLV.lvlib/Private/Utility/Build Last Error Info.vi</Property>
+				<Property Name="Source[4].newName" Type="Str">BTI_Build Last Error Info.vi</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/RT PXI Target/BTICardLV.lvlib/Private/Utility/Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[5].newName" Type="Str">BTI_Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/RT PXI Target/BTICardLV.lvlib/Public/Controls/Error Info.ctl</Property>
+				<Property Name="Source[6].newName" Type="Str">BTI_Error Info.ctl</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 			</Item>
 		</Item>
 	</Item>
