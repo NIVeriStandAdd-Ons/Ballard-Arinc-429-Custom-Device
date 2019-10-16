@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+		<title>XML Parameters Files Examples</title>
+		<link rel="STYLESHEET" type="text/css" href="css/VSsystemexplorer.css">
+		<script src="common.js" type="text/javascript"></script><script src="js/expandable_tree.js" type="text/javascript"></script>
+		<link rel="STYLESHEET" type="text/css" href="css/expandable_tree.css">
+		<script src="launchhelp.js" type="text/javascript"></script><script src="js/dynamicjumps.js" type="text/javascript"></script>
+	</head>
+	<style>
+		.Bordered {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+			padding: 6px;
+			font-weight: bold;
+			color: #0000FF;
+			text-align: left;;
+			}
+		.Header {
+			padding: 6px;
+			font-weight: bold;
+			color: black;
+			text-align: left;;
+			}
+		.Centered {
+			padding: 0px;
+			color: grey;
+			font-style: italic;
+			font-family: Courier New;
+			text-align: center;;
+			}
+		.MyMonospace {
+  			padding-right: 3px;
+			color: #0000FF;
+			font-style: italic;
+			font-weight: bold;
+			font-family: Courier New;
+			text-align: left;;
+			}
+		.sc3 {
+			color: black;
+			padding: 0px;
+			font-style: italic;
+			font-weight: bold;
+			font-family: Courier New;
+			text-align: left;;
+		}
+			}
+	</style>
+<body>
+	<noscript>
+		<p class="Body">JavaScript is disabled. <a href="veristandmerge.chm::/JavaScript_Disabled.html">Details</a></p>
+		<hr width="100%" noshade>
+	</noscript>
+<h1>XML Parameters Files Examples</h1>
+<!----------------------------------- BNR Parameter ----------------------------------->
+<h3>BNR Parameter Example</h3>
+<p> The table, below, is an example of a BNR Parameter.</p>
+<table class="Bordered">
+<tr>
+<th class="Header">Line</th>
+<th nowrap class="Header">XML Code</th>
+</tr>
+<tr>
+<td nowrap class="Centered">1.</td>
+<td nowrap class="MyMonospace">&lt;label&gt;</td>
+</tr>
+<tr>
+<td nowrap class="Centered">2.</td>
+<td nowrap class="MyMonospace">    &lt;labelDecimal&gt;<span class="sc3">23</span><span class="MyMonospace">&lt;/labelDecimal</span></td>
+</tr>
+<tr>
+<td class="Centered">3.</td>
+<td nowrap class="MyMonospace">    &lt;createSDIChannel&gt;</span><span class="sc3">false</span><span class="MyMonospace">&lt;/createSDIChannel</span></td>
+</tr>
+<tr>
+<td class="Centered">4.</td>
+<td nowrap class="MyMonospace">    &lt;createSSMChannel&gt;</span><span class="sc3">true</span><span class="MyMonospace">&lt;/createSSMChannel</span></td>
+</tr>
+<tr>
+<td class="Centered">5.</td>
+<td nowrap class="MyMonospace">    &lt;createParityChannel&gt;</span><span class="sc3">true</span><span class="MyMonospace">&lt;/createParityChannel</span></td>
+</tr>
+<tr>
+<td class="Centered">6.</td>
+<td nowrap class="MyMonospace">    &lt;parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">        &lt;encoding&gt;</span><span class="sc3">BNR</span><span class="MyMonospace">&lt;/encoding</span></td>
+</tr>
+<tr>
+<td class="Centered">8.</td>
+<td nowrap class="MyMonospace">        &lt;signed&gt;</span><span class="sc3">true</span><span class="MyMonospace">&lt;/signed</span></td>
+</tr>
+<tr>
+<td class="Centered">9.</td>
+<td nowrap class="MyMonospace">        &lt;startBit&gt;</span><span class="sc3">10</span><span class="MyMonospace">&lt;/startBit</span></td>
+</tr>
+<tr>
+<td class="Centered">10.</td>
+<td nowrap class="MyMonospace">        &lt;numberOfBits&gt;</span><span class="sc3">19</span><span class="MyMonospace">&lt;/numberOfBits</span></td>
+</tr>
+<tr>
+<td class="Centered">11.</td>
+<td nowrap class="MyMonospace">        &lt;scale&gt;</span><span class="sc3">234.6</span><span class="MyMonospace">&lt;/scale</span></td>
+</tr>
+<tr>
+<td class="Centered">12.</td>
+<td nowrap class="MyMonospace">        &lt;offset&gt;</span><span class="sc3">-2.4</span><span class="MyMonospace">&lt;/offset</span></td>
+</tr>
+<tr>
+<td class="Centered">13.</td>
+<td nowrap class="MyMonospace">        &lt;name&gt;</span><span class="sc3">Parameter 0</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">14.</td>
+<td nowrap class="MyMonospace">        &lt;unit&gt;</span><span class="sc3">psi</span><span class="MyMonospace">&lt;/unit</span></td>
+</tr>
+<tr>
+<td class="Centered">15.</td>
+<td nowrap class="MyMonospace">    &lt;/parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">16.</td>
+<td nowrap class="MyMonospace">&lt;/label&gt;</td>
+</tr>
+</table>
+<p>
+<b>NOTES:</b><br>
+<table>
+<tr>
+<td>
+<ul>
+<li>This example doesn't show the source code for the <span class="Monospace">&lt;channel&gt;</span> and <span class="Monospace">&lt;hardwareChannel&gt;</span>;</li>
+<li>It's a Parameter definition for a Rx Channel as <span class="Monospace">&lt;defaultValue&gt;</span> element is not present;</li>
+<li>For a given <span class="Monospace">&lt;channel&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;label&gt;</span>;</li>
+<li>For a given <span class="Monospace">&lt;label&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;parameter&gt;</span>;</li>
+<li>The Engine takes <span class="sc3">19 Bits</span>, starting the 11<sup>th</sup> Bit (Bit #10) in the Raw Arinc-429 word. As it's a signed BNR Parameter, the most left Bit is the Sign Bit. The engine converts these 19 Bits (2's complement) to decimal, multiplies by the <span class="Monospace">&lt;scale&gt;</span> value and adds the <span class="Monospace">&lt;offset&gt;</span> value;</li>
+<li>This Parameter will have a NI-VeriStand Channel named <span class="sc3">Parameter 0</span>. Unit for that NI-VeriStand Channel will be <span class="sc3">psi</span>.</li>
+</ul>
+</td>
+</tr>
+</p>
+</table>
+<!----------------------------------- BCD Parameter ----------------------------------->
+<h3>BCD Parameter Example</h3>
+<p> The table, below, is an example of BCD Parameters.</p>
+<table class="Bordered">
+<tr>
+<th class="Header">Line</th>
+<th nowrap class="Header">XML Code</th>
+</tr>
+<tr>
+<td nowrap class="Centered">1.</td>
+<td nowrap class="MyMonospace">&lt;channel&gt;</td>
+</tr>
+<tr>
+<td nowrap class="Centered">2.</td>
+<td nowrap class="MyMonospace">    &lt;hardwareChannel&gt;<span class="sc3">26</span><span class="MyMonospace">&lt;/hardwareChannel</span></td>
+</tr>
+<tr>
+<td class="Centered">3.</td>
+<td nowrap class="MyMonospace">    &lt;label&gt;</span>
+</tr>
+<tr>
+<td class="Centered">4.</td>
+<td nowrap class="MyMonospace">        &lt;labelDecimal&gt;</span><span class="sc3">28</span><span class="MyMonospace">&lt;/labelDecimal</span></td>
+</tr>
+<tr>
+<td class="Centered">5.</td>
+<td nowrap class="MyMonospace">        &lt;parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">6.</td>
+<td nowrap class="MyMonospace">            &lt;encoding&gt;</span><span class="sc3">BCD</span><span class="MyMonospace">&lt;/encoding</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">            &lt;signed&gt;</span><span class="sc3">true</span><span class="MyMonospace">&lt;/signed</span></td>
+</tr>
+<tr>
+<td class="Centered">8.</td>
+<td nowrap class="MyMonospace">            &lt;startBit&gt;</span><span class="sc3">18</span><span class="MyMonospace">&lt;/startBit</span></td>
+</tr>
+<tr>
+<td class="Centered">9.</td>
+<td nowrap class="MyMonospace">            &lt;numberOfBits&gt;</span><span class="sc3">11</span><span class="MyMonospace">&lt;/numberOfBits</span></td>
+</tr>
+<tr>
+<td class="Centered">10.</td>
+<td nowrap class="MyMonospace">            &lt;scale&gt;</span><span class="sc3">1.0</span><span class="MyMonospace">&lt;/scale</span></td>
+</tr>
+<tr>
+<td class="Centered">11.</td>
+<td nowrap class="MyMonospace">            &lt;offset&gt;</span><span class="sc3">0.0</span><span class="MyMonospace">&lt;/offset</span></td>
+</tr>
+<tr>
+<td class="Centered">12.</td>
+<td nowrap class="MyMonospace">            &lt;name&gt;</span><span class="sc3">Parameter 5</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">13.</td>
+<td nowrap class="MyMonospace">            &lt;unit&gt;</span><span class="sc3">psi</span><span class="MyMonospace">&lt;/unit</span></td>
+</tr>
+<tr>
+<td class="Centered">14.</td>
+<td nowrap class="MyMonospace">            &lt;defaultValue&gt;</span><span class="sc3">-724</span><span class="MyMonospace">&lt;/defaultValue</span></td>
+</tr>
+<tr>
+<td class="Centered">15.</td>
+<td nowrap class="MyMonospace">        &lt;/parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">15.</td>
+<td nowrap class="MyMonospace">        &lt;parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">17.</td>
+<td nowrap class="MyMonospace">            &lt;encoding&gt;</span><span class="sc3">BCD</span><span class="MyMonospace">&lt;/encoding</span></td>
+</tr>
+<tr>
+<td class="Centered">18.</td>
+<td nowrap class="MyMonospace">            &lt;signed&gt;</span><span class="sc3">false</span><span class="MyMonospace">&lt;/signed</span></td>
+</tr>
+<tr>
+<td class="Centered">19.</td>
+<td nowrap class="MyMonospace">            &lt;startBit&gt;</span><span class="sc3">10</span><span class="MyMonospace">&lt;/startBit</span></td>
+</tr>
+<tr>
+<td class="Centered">20.</td>
+<td nowrap class="MyMonospace">            &lt;numberOfBits&gt;</span><span class="sc3">8</span><span class="MyMonospace">&lt;/numberOfBits</span></td>
+</tr>
+<tr>
+<td class="Centered">21.</td>
+<td nowrap class="MyMonospace">            &lt;scale&gt;</span><span class="sc3">1.0</span><span class="MyMonospace">&lt;/scale</span></td>
+</tr>
+<tr>
+<td class="Centered">22.</td>
+<td nowrap class="MyMonospace">            &lt;offset&gt;</span><span class="sc3">0.0</span><span class="MyMonospace">&lt;/offset</span></td>
+</tr>
+<tr>
+<td class="Centered">23.</td>
+<td nowrap class="MyMonospace">            &lt;name&gt;</span><span class="sc3">Parameter 16</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">24.</td>
+<td nowrap class="MyMonospace">            &lt;unit&gt;</span><span class="sc3">psi</span><span class="MyMonospace">&lt;/unit</span></td>
+</tr>
+<tr>
+<td class="Centered">25.</td>
+<td nowrap class="MyMonospace">            &lt;defaultValue&gt;</span><span class="sc3">25</span><span class="MyMonospace">&lt;/defaultValue</span></td>
+</tr>
+<tr>
+<td class="Centered">26.</td>
+<td nowrap class="MyMonospace">        &lt;/parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">27.</td>
+<td nowrap class="MyMonospace">    &lt;/label&gt;</td>
+</tr>
+<tr>
+<td class="Centered">28.</td>
+<td nowrap class="MyMonospace">&lt;channel&gt;</td>
+</tr>
+</table>
+<p>
+<b>NOTES:</b><br>
+<table>
+<tr>
+<td>
+<ul>
+<li>These are Parameters definition for a Tx Channel as <span class="Monospace">&lt;defaultValue&gt;</span> element is present and <span class="Monospace">&lt;hardwareChannel&gt;</span> element is in [16:31] range;</li>
+<li>For a given <span class="Monospace">&lt;channel&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;label&gt;</span>;</li>
+<li>For a given <span class="Monospace">&lt;label&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;parameter&gt;</span>;</li>
+<li>Below is the breakdown of &lt;labelDecimal&gt;</span><span class="sc3">28</span> with individual Label Bits and BCD Digits (top row represents Bits Indexes):<br><img style="display:inline" src="gifs/BCD_Parameters_Label.gif"></li>
+<li>This Parameter will have a NI-VeriStand Channel named "Parameter 5". Unit for that NI-VeriStand Channel will be: <span class="sc3">psi</span>.</li>
+<li>For Parameter <span class="sc3">Parameter 5</span>, "SSM" Bits (Bits [29:30]) are used for the sign, we consider it negative if SSM Bits are 11b (0x3). For all other SSM Bits values,
+we consider the BCD to be positive. Bits [18:28] are 3 digits ("CHAR 1", "CHAR 2" and "CHAR 3"). As no Scaling is applied, value can vary in range: [-799:799]. Most left digit "CHAR 1" has only 3 bits width;</li>
+<li>For Parameter <span class="sc3">Parameter 16</span>, Bits [10:17] are 2 digits ("CHAR 4" and "CHAR 5"). As no Scaling is applied, value can vary in range: [0:99].</li>
+</ul>
+</td>
+</tr>
+</p>
+</table>
+<!----------------------------------- Discrete Parameter ----------------------------------->
+<h3>Discrete Parameter Example</h3>
+<p> The table, below, is an example of a Discrete Parameter.</p>
+<table class="Bordered">
+<tr>
+<th class="Header">Line</th>
+<th nowrap class="Header">XML Code</th>
+</tr>
+<tr>
+<td nowrap class="Centered">1.</td>
+<td nowrap class="MyMonospace">&lt;label&gt;</td>
+</tr>
+<tr>
+<td nowrap class="Centered">2.</td>
+<td nowrap class="MyMonospace">    &lt;labelDecimal&gt;<span class="sc3">23</span><span class="MyMonospace">&lt;/labelDecimal</span></td>
+</tr>
+<tr>
+<td class="Centered">3.</td>
+<td nowrap class="MyMonospace">    &lt;parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">4.</td>
+<td nowrap class="MyMonospace">        &lt;encoding&gt;</span><span class="sc3">Discrete</span><span class="MyMonospace">&lt;/encoding</span></td>
+</tr>
+<tr>
+<td class="Centered">5.</td>
+<td nowrap class="MyMonospace">        &lt;startBit&gt;</span><span class="sc3">10</span><span class="MyMonospace">&lt;/startBit</span></td>
+</tr>
+<tr>
+<td class="Centered">6.</td>
+<td nowrap class="MyMonospace">        &lt;numberOfBits&gt;</span><span class="sc3">1</span><span class="MyMonospace">&lt;/numberOfBits</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">        &lt;name&gt;</span><span class="sc3">Parameter 30</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">8.</td>
+<td nowrap class="MyMonospace">    &lt;/parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">9.</td>
+<td nowrap class="MyMonospace">&lt;/label&gt;</td>
+</tr>
+</table>
+<p>
+<b>NOTES:</b><br>
+<table>
+<tr>
+<td>
+<ul>
+<li>This example doesn't show the source code for the <span class="Monospace">&lt;channel&gt;</span> and <span class="Monospace">&lt;hardwareChannel&gt;</span>;</li>
+<li>It's a Parameter definition for a Rx Channel as <span class="Monospace">&lt;defaultValue&gt;</span> element is not present;</li>
+<li>For a given <span class="Monospace">&lt;channel&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;label&gt;</span>;</li>
+<li>For a given <span class="Monospace">&lt;label&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;parameter&gt;</span>;</li>
+<li>The Engine takes 1 Bit, starting the 11<sup>th</sup> Bit (Bit #10) in the Raw Arinc-429 word. No Scaling is applied;</li>
+<li>This Parameter will have a NI-VeriStand Channel named <span class="sc3">Parameter 30</span>.</li>
+</ul>
+</td>
+</tr>
+</p>
+</table>
+
+<!----------------------------------- Discrete Parameters ----------------------------------->
+<h3>Discrete Parameters Example</h3>
+<p> The table, below, is an example of Discrete Parameters for a Label from a Tx Channel.</p>
+<table class="Bordered">
+<tr>
+<th class="Header">Line</th>
+<th nowrap class="Header">XML Code</th>
+</tr>
+<tr>
+<td nowrap class="Centered">1.</td>
+<td nowrap class="MyMonospace">&lt;label&gt;</td>
+</tr>
+<tr>
+<td nowrap class="Centered">2.</td>
+<td nowrap class="MyMonospace">    &lt;labelDecimal&gt;<span class="sc3">26</span><span class="MyMonospace">&lt;/labelDecimal</span></td>
+</tr>
+<tr>
+<td class="Centered">3.</td>
+<td nowrap class="MyMonospace">    &lt;parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">4.</td>
+<td nowrap class="MyMonospace">        &lt;encoding&gt;</span><span class="sc3">Discrete</span><span class="MyMonospace">&lt;/encoding</span></td>
+</tr>
+<tr>
+<td class="Centered">5.</td>
+<td nowrap class="MyMonospace">        &lt;startBit&gt;</span><span class="sc3">10</span><span class="MyMonospace">&lt;/startBit</span></td>
+</tr>
+<tr>
+<td class="Centered">6.</td>
+<td nowrap class="MyMonospace">        &lt;numberOfBits&gt;</span><span class="sc3">3</span><span class="MyMonospace">&lt;/numberOfBits</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">        &lt;name&gt;</span><span class="sc3">Parameter 30</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">        &lt;name&gt;</span><span class="sc3">Parameter 31</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">7.</td>
+<td nowrap class="MyMonospace">        &lt;name&gt;</span><span class="sc3">Parameter 32</span><span class="MyMonospace">&lt;/name</span></td>
+</tr>
+<tr>
+<td class="Centered">25.</td>
+<td nowrap class="MyMonospace">        &lt;defaultValue&gt;</span><span class="sc3">1</span><span class="MyMonospace">&lt;/defaultValue</span></td>
+</tr>
+<tr>
+<td class="Centered">25.</td>
+<td nowrap class="MyMonospace">        &lt;defaultValue&gt;</span><span class="sc3">0</span><span class="MyMonospace">&lt;/defaultValue</span></td>
+</tr>
+<tr>
+<td class="Centered">25.</td>
+<td nowrap class="MyMonospace">        &lt;defaultValue&gt;</span><span class="sc3">1</span><span class="MyMonospace">&lt;/defaultValue</span></td>
+</tr>
+<tr>
+<td class="Centered">8.</td>
+<td nowrap class="MyMonospace">    &lt;/parameter&gt;</span></td>
+</tr>
+<tr>
+<td class="Centered">9.</td>
+<td nowrap class="MyMonospace">&lt;/label&gt;</td>
+</tr>
+</table>
+<p>
+<b>NOTES:</b><br>
+<table>
+<tr>
+<td>
+<ul>
+<li>This example doesn't show the source code for the <span class="Monospace">&lt;channel&gt;</span> and <span class="Monospace">&lt;hardwareChannel&gt;</span>;</li>
+<li>It's a Parameter definition for a Rx Channel as <span class="Monospace">&lt;defaultValue&gt;</span> element is not present;</li>
+<li>For a given <span class="Monospace">&lt;channel&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;label&gt;</span>;</li>
+<li>For a given <span class="Monospace">&lt;label&gt;</span>, there can be multiple instances of <span class="Monospace">&lt;parameter&gt;</span>;</li>
+<li>For Parameter <span class="sc3">Parameter 30</span>, NI-VeriStand Engine sets Bit #10 (11<sup>th</sup> Bit) in the Raw Arinc-429 word. No Scaling is applied. Default Value is <span class="sc3">1</span>;</li>
+<li>For Parameter <span class="sc3">Parameter 31</span>, NI-VeriStand Engine sets Bit #11 (12<sup>th</sup> Bit) in the Raw Arinc-429 word. No Scaling is applied. Default Value is <span class="sc3">0</span>;</li>
+<li>For Parameter <span class="sc3">Parameter 32</span>, NI-VeriStand Engine sets Bit #12 (13<sup>th</sup> Bit) in the Raw Arinc-429 word. No Scaling is applied. Default Value is <span class="sc3">1</span>.</li>
+</ul>
+</td>
+</tr>
+</p>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+		<title>XML Parameters File Help</title>
+		<link rel="STYLESHEET" type="text/css" href="css/VSsystemexplorer.css">
+		<script src="common.js" type="text/javascript"></script><script src="js/expandable_tree.js" type="text/javascript"></script>
+		<link rel="STYLESHEET" type="text/css" href="css/expandable_tree.css">
+		<script src="launchhelp.js" type="text/javascript"></script><script src="js/dynamicjumps.js" type="text/javascript"></script>
+	</head>
+	<style>
+		.Bordered {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+			padding: 6px;
+			text-align: left;;
+			}
+		.Header {
+			padding: 6px;
+			font-weight: bold;
+			color: black;
+			border-right: 1px solid black;
+			text-align: left;;
+			}
+		.Centered {
+ 			border: 1px solid black;
+  			border-collapse: collapse;
+			padding: 6px;
+			text-align: center;;
+			}
+		.MyMonospace {
+  			padding-right: 3px;
+			color: #0000FF;
+			font-style: italic;
+			font-weight: bold;
+			font-family: Courier New;
+			text-align: left;;
+			}
+		.sc3 {
+			color: black;
+			padding: 0px;
+			font-style: italic;
+			font-weight: bold;
+			font-family: Courier New;
+			text-align: left;;
+		}
+			}
+	</style>
+<body>
+	<noscript>
+		<p class="Body">JavaScript is disabled. <a href="veristandmerge.chm::/JavaScript_Disabled.html">Details</a></p>
+		<hr width="100%" noshade>
+	</noscript>
+<h1>XML Parameters File Help</h1>
+<p><i>Version 1.0.1</i></p>
+<p ></p>
+<h3>Introduction</h3>
+<p class="Body">This document is the documentation for the Parameters XML files used in Ballard Arinc-429 Custom Device.</p>
+<h3>XML Schema</h3>
+<p class="Body">XML Schema used is called: <b><i>Arinc429_Parameters_XML_Schema.xsd</b></i>. Schema is located at location: <b><i>…\NI VeriStand XXXX\Custom Devices\Ballard - Arinc-429\Data</b></i> (XXXX being your NI-VeriStand version
+<p></p>
+<tr>
+<td class="Icon"><img src="gifs/caution.gif"></td>
+<td class="Dark-Red"><strong>Caution</strong>  Do not edit the contents of the XML Schema.</td>
+</tr>
+</p>
+<p class="Body">For XML Schema File, go to <a href="XML Schema.htm">XML Schema File</a>.</p>
+
+
+<h3>XML file validation against Schema</h3>
+<p class="Body">The Ballard Arinc-429 Custom Device comes with an Assembly called: <b><i>Parameters_Arinc429_XML_Tools.dll</b></i>, located here: <b><i>…\NI VeriStand XXXX\Custom Devices\Ballard - Arinc-429\Data</b></i> (XXXX being your NI-VeriStand version). The assembly can be called to check any user defined XML Parameters file against the schema. Though, it's important to note that some extra checkngs are performed out from the Assembly itself.
+</p>
+<p class="Body">Once the validation against XML Schema is done, some extra checking is performed. Below is a list of what is checked. Left Column gives the Error Code returned in case of Error. Right Column is the Description of the checking performed.</p>
+
+<table class="Bordered">
+<tr>
+<th class="Header">Error</th>
+<th nowrap class="Header">Description</th>
+</tr>
+<tr>
+<td nowrap class="Centered">5010</td>
+<td class="Bordered">This checking confirms that, for a given Hardware Channel+Label combination, all parameters have a unique combination of Parameter settings: Hardware Channel, Label Decimal and Parameter Name. If there are multiple duplicates, the feature returns all duplicates.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5011</td>
+<td class="Bordered">This checking confirms that, for a given Hardware Channel+Label combination, all parameters don't use a range of bits larger than 32. If there are some Parameters out of range, the feature returns their names.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5012</td>
+<td class="Bordered">This checking confirms that, for a given Hardware Channel+Label combination, all Discrete parameters have a name per Bit. If there are some Discrete Parameters without name, the feature returns their names.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5013</td>
+<td class="Bordered">This checking confirms that, for a given Tx Hardware Channel, all Parameters have a Default Value (per Bit for Discrete Parameter Type). If there are some Discrete Parameters without Default Value, the feature returns their names.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5014</td>
+<td class="Bordered">This checking confirms that, for a given Hardware Channel+Label combination, all BCD parameters have a valid startBit+numberOfBits combination. If some BCD Parameters have invalid settings, the feature returns their names.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5015</td>
+<td class="Bordered">This checking confirms that, for a given Tx Hardware Channel, all Labels have their createParityChannel set to false. If there are some Labels with createParityChannel set to true, the feature returns their names.</td>
+</tr>
+<tr>
+<td nowrap class="Centered">5016</td>
+<td class="Bordered">This checking confirms that, for a given Tx Hardware Channel, all Parameters have their startBit set to a minimum value of 8. If there are some Parameters with startBit equal or lower than 7, the feature returns their names.</td>
+</tr>
+<!--<tr>
+<td nowrap class="Centered">5017</td>
+<td class="Bordered">This checking confirms that, for a given Hardware Channel, each Label Decimal+SDI Combination is unique. It's important to note that this checking is performed during Parameter XML File loading. If there are multiple duplicates, the function returns all duplicates.</td>
+</tr>-->
+</table>
+
+<h3>XML Tags</h3>
+<p class="Body">For XLM Tags description, go to <a href="XML Tags.htm">XML Tags</a>.</p>
+
+<h3>XML Parameters File Examples</h3>
+<p class="Body">For XML Parameters File Examples, go to <a href="XML Parameters Files Examples.htm">XML Parameters Files Example</a>.</p>
+
+</body>
+</html>

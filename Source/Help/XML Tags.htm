@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+		<title>XML Tags</title>
+		<link rel="STYLESHEET" type="text/css" href="css/VSsystemexplorer.css">
+		<script src="common.js" type="text/javascript"></script><script src="js/expandable_tree.js" type="text/javascript"></script>
+		<link rel="STYLESHEET" type="text/css" href="css/expandable_tree.css">
+		<script src="launchhelp.js" type="text/javascript"></script><script src="js/dynamicjumps.js" type="text/javascript"></script>
+	<style>
+		.Bordered {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+			padding: 6px;
+			text-align: left;;
+			}
+		.Centered {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+			padding: 6px;
+			text-align: center;;
+			}
+	</style>
+	</head>
+<body>
+	<noscript>
+		<p class="Body">JavaScript is disabled. <a href="veristandmerge.chm::/JavaScript_Disabled.html">Details</a></p>
+		<hr width="100%" noshade>
+	</noscript>
+<h1>XML Tags</h1>
+<p></p>
+
+<p class="Body">
+The following table describes the XML elements, or tags, you can use in a Parameter XML file. XML Schema used is called: <b><i>Arinc429_Parameters_XML_Schema.xsd</b></i>. Schema is located at location: <b><i>…\NI VeriStand XXXX\Custom Devices\Ballard - Arinc-429\Data</b></i> (XXXX being your NI-VeriStand version). You can open the file in an XML or text editor to read the schema and view the hierarchy.
+</p>
+
+<table class="Bordered">
+<tr>
+<th class="Bordered">Element</th>
+<th class="Bordered">Required?</th>
+<th nowrap class="Bordered">Element Type</th>
+<th nowrap class="Bordered">Min/Max Occurrences</th>
+<th class="Bordered">Description</th>
+</tr>
+<tr>
+<td><span class="Monospace">&lt;channel&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">complex</td>
+<td class="Centered">1/16</td>
+<td class="Bordered">Opening tag for a channel labels definition.</td>
+</tr>
+<tr>
+<td><span class="Monospace"> <img style="display:inline" src="gifs/noloc_get.gif"> &lt;hardwareChannel&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">xs:int</td>
+<td class="Centered">1</td>
+<td class="Bordered">Specifies the Hardware Channel used. Range is: [0:31].</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace"> <img style="display:inline" src="gifs/noloc_get.gif"> &lt;label&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">complex</td>
+<td class="Centered">1/256</td>
+<td class="Bordered">Opening tag for a label definition..</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;labelDecimal&gt;</span></td>
+<td class="Centered">No<a href="#s1">1</a></td>
+<td class="Centered">xs:int</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies the label (decimal). Range is: [0:255].</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;labelOctal&gt;</span></td>
+<td class="Centered">No<a href="#s1">1</a></td>
+<td class="Centered">xs:int</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies the label (octal). Range is: [0:377].</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;sdi&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:string</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies whether these Label settings apply to all SDI variants or a specific one. Supported values:
+<ul>
+	<li><span class="Monospace">All</span>-Pastes by creating a new instance of the item.</li>
+	<li><span class="Monospace">00</span>-Pastes only if an item with the same GUID does not already exist.</li>
+	<li><span class="Monospace">01</span>-Pastes only if an item with the same name does not already exist.</li>
+	<li><span class="Monospace">10</span>-Pastes by replacing an item.</li>
+	<li><span class="Monospace">11</span>-Prompts the operator with a dialog before pasting.</li>
+</ul>
+<p> Default value is: <span class="Monospace">All</span></p>
+</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;createSDIChannel&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:boolean</a></td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies whether a NI-VeriStand Channel should be created for the Label SDI Bits. Default Value (if XML element is absent) is false.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;createSSMChannel&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:boolean</a></td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies whether a NI-VeriStand Channel should be created for the Label SSM Bits. Default Value (if XML element is absent) is false.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;createParityChannel&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:boolean</a></td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies whether a NI-VeriStand Channel should be created for the Label Parity Bit. This is supported only for Rx Channel, not for Tx. Default Value (if XML element is absent) is false.</td>
+</tr>
+<tr>
+<td><span class="Monospace">     <img style="display:inline" src="gifs/noloc_get.gif"> &lt;parameter&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">complex</td>
+<td class="Centered">1/unbunded</td>
+<td class="Bordered">Opening tag for a Parameter definition.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;encoding&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">xs:string</td>
+<td class="Centered">1/1</td>
+<td class="Bordered">Specifies the Encoding for the Parameter. Supported values:
+<ul>
+	<li><span class="Monospace">BNR</span> - Binary Number Representation.</li>
+	<li><span class="Monospace">BCD</span> - Binary Coded Decimal. Each decimal digit is represented by a fixed number of bits.</li>
+	<li><span class="Monospace">Discrete</span> - Set of individual adjacent Bits.</li>
+</ul>
+<p> Default value is: <span class="Monospace">BNR</span></p>
+</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;signed&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:boolean</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies whether Parameter is signed or not. It applies only to BCD and BNR encoding. If it's a signed BCD Parameter, we consider it negative if SSM Bits are 11. For all other cases,
+we consider the BCD to be positive.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;startBit&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">xs:int</td>
+<td class="Centered">1/1</td>
+<td class="Bordered">Specifies what is the Start Bit for the Parameter. It's a 0-based information. For Labels from Rx Channels, range accepted is: [0:31]. For Labels from Tx Channels, valid range is: [8:30] (Label ID (bits [0:7] and Parity Bit (bit 31) are overloaded by board firmware). For Parameters when <span class="Monospace">&lt;encoding&gt;</span> is set to <span class="Monospace">BCD</span>, <span class="Monospace">&lt;startBit&gt;</span> values supported are: 10, 14, 18, 22, 26.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;numberOfBits&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">xs:int</td>
+<td class="Centered">1/1</td>
+<td class="Bordered">Specifies what is the Number of Bits for the Parameter. Range accepted is: [0:32].</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;scale&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:double</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies the Scale value to be applied to scale from/to raw data. If "NO Scaling" is to be applied, value should be set to 1.0.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;offset&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:double</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies the Offset value to be applied to offset from/to raw data. If "NO Scaling" is to be applied, value should be set to 0.0.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;name&gt;</span></td>
+<td class="Centered">Yes</td>
+<td class="Centered">xs:string</td>
+<td class="Centered">1/32</td>
+<td class="Bordered">Specifies, for each Parameter, the name to be used, in NI-VeriStand. When Parameter <span class="Monospace">encoding</span> is set to <span class="Monospace">Discrete</span>, each Parameter (each Bit) must have an instance of that <span class="Monospace">&lt;name&gt;</span>.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;unit&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:string</td>
+<td class="Centered">0/1</td>
+<td class="Bordered">Specifies, for each Parameter, the unit to be used, in NI-VeriStand.</td>
+</tr>
+<tr>
+<td nowrap><span class="Monospace">         <img style="display:inline" src="gifs/noloc_get.gif"> &lt;defaultValue&gt;</span></td>
+<td class="Centered">No</td>
+<td class="Centered">xs:double</td>
+<td class="Centered">0/unbunded</td>
+<td class="Bordered">Specifies, for each Parameter, the Default Value to be used for associated NI-VeriStand Channel. For Parameters used in Tx Channels, this XML Element must be present for each Parameter. For Parameters used in Tx Channels, when Parameter <span class="Monospace">&lt;encoding&gt;</span> is set to <span class="Monospace">Discrete</span>, each Parameter (each Bit) must have an instance of that <span class="Monospace">&lt;defaultValue&gt;</span>.</td>
+</tr>
+</table>
+<p class="Body"><a name="s1"></a>1 Either <span class="Monospace">&lt;labelDecimal&gt;</span> or <span class="Monospace">&lt;labelOctal&gt;<span> must be present for each <span class="Monospace">&lt;label&gt;</span> instance.</p>
+
+</body>
+</html>
+

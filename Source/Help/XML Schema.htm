@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+		<title>XML Schema</title>
+		<link rel="STYLESHEET" type="text/css" href="css/VSsystemexplorer.css">
+		<script src="common.js" type="text/javascript"></script><script src="js/expandable_tree.js" type="text/javascript"></script>
+		<link rel="STYLESHEET" type="text/css" href="css/expandable_tree.css">
+		<script src="launchhelp.js" type="text/javascript"></script><script src="js/dynamicjumps.js" type="text/javascript"></script>
+
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+	font-weight: bold;
+}
+.sc1 {
+	color: #0000FF;
+}
+.sc3 {
+	color: #FF0000;
+}
+.sc6 {
+	font-weight: bold;
+	color: #8000FF;
+}
+.sc8 {
+}
+.sc11 {
+	color: #0000FF;
+}
+</style>
+</head>
+<body>
+<h1>XML Schema</h1>
+<h2>Below is a the content of the XML Schema file.</h2>
+<p ></p>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc1">&lt;xs:schema</span><span class="sc8"> </span><span class="sc3">attributeFormDefault</span><span class="sc8">=</span><span class="sc6">"unqualified"</span><span class="sc8"> </span><span class="sc3">elementFormDefault</span><span class="sc8">=</span><span class="sc6">"qualified"</span><span class="sc8"> </span><span class="sc3">xmlns:xs</span><span class="sc8">=</span><span class="sc6">"http://www.w3.org/2001/XMLSchema"</span><span class="sc1">&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"parameters"</span><span class="sc1">&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;xs:annotation&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;xs:documentation&gt;</span><span class="sc0">Notes                                                                                 </span><span class="sc1">&lt;/xs:documentation&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;xs:documentation&gt;</span><span class="sc0">hardwareChannel is 0-Based, range accepted is: 0-31 (cf. to respective supplier doc.) </span><span class="sc1">&lt;/xs:documentation&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;xs:documentation&gt;</span><span class="sc0">startBit is 0-Based, range accepted is: 8-31 (Tx), 0-31 (rx)                          </span><span class="sc1">&lt;/xs:documentation&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/xs:annotation&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;xs:complexType&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;xs:sequence&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"channel"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"16"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc1">&gt;</span><span class="sc0">
+              </span><span class="sc1">&lt;xs:complexType&gt;</span><span class="sc0">
+                </span><span class="sc1">&lt;xs:sequence&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"hardwareChannel"</span><span class="sc1">&gt;</span><span class="sc0">
+                        </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                            </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:int"</span><span class="sc1">&gt;</span><span class="sc0">
+                              </span><span class="sc1">&lt;xs:minInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                              </span><span class="sc1">&lt;xs:maxInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"31"</span><span class="sc11">/&gt;</span><span class="sc0">
+                            </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                         </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"label"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"256"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc1">&gt;</span><span class="sc0">
+                        </span><span class="sc1">&lt;xs:complexType&gt;</span><span class="sc0">
+                            </span><span class="sc1">&lt;xs:sequence&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"labelDecimal"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc1">&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:int"</span><span class="sc1">&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:minInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:maxInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"255"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                         </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"labelOctal"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc1">&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:int"</span><span class="sc1">&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:pattern</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"([0-7])+"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:minInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:maxInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"377"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"sdi"</span><span class="sc8">  </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"All"</span><span class="sc1">&gt;</span><span class="sc0">
+                                     </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:string"</span><span class="sc1">&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"All"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"00"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"01"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"10"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"11"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:boolean"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"createSDIChannel"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"false"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:boolean"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"createSSMChannel"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"false"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:boolean"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"createParityChannel"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"false"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"parameter"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"unbounded"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc1">&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;xs:complexType&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;xs:choice</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"unbounded"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc1">&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"encoding"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"BNR"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:string"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                        </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"BNR"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                        </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"BCD"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                        </span><span class="sc1">&lt;xs:enumeration</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"Discrete"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:boolean"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"signed"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"false"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"startBit"</span><span class="sc8">  </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8">  </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"8"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:int"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                        </span><span class="sc1">&lt;xs:minInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                        </span><span class="sc1">&lt;xs:maxInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"31"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"numberOfBits"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc1">&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:simpleType&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;xs:restriction</span><span class="sc8"> </span><span class="sc3">base</span><span class="sc8">=</span><span class="sc6">"xs:int"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;xs:minInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;xs:maxInclusive</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"32"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;/xs:restriction&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;/xs:simpleType&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:double"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"scale"</span><span class="sc8">  </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"1.0"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:double"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"offset"</span><span class="sc8"> </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"0.0"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc8"> </span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:string"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"name"</span><span class="sc1">&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;xs:annotation&gt;</span><span class="sc0">
+                                                    </span><span class="sc1">&lt;xs:documentation&gt;</span><span class="sc0">For Discrete encoding, there is one "name" element per Bit</span><span class="sc1">&lt;/xs:documentation&gt;</span><span class="sc0">
+                                                </span><span class="sc1">&lt;/xs:annotation&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:string"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"unit"</span><span class="sc8"> </span><span class="sc3">maxOccurs</span><span class="sc8">=</span><span class="sc6">"1"</span><span class="sc8"> </span><span class="sc3">minOccurs</span><span class="sc8">=</span><span class="sc6">"0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                            </span><span class="sc1">&lt;xs:element</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"xs:double"</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"defaultValue"</span><span class="sc8">  </span><span class="sc3">default</span><span class="sc8">=</span><span class="sc6">"0.0"</span><span class="sc11">/&gt;</span><span class="sc0">
+                                        </span><span class="sc1">&lt;/xs:choice&gt;</span><span class="sc0">
+                                    </span><span class="sc1">&lt;/xs:complexType&gt;</span><span class="sc0">
+                                </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                            </span><span class="sc1">&lt;/xs:sequence&gt;</span><span class="sc0">
+                        </span><span class="sc1">&lt;/xs:complexType&gt;</span><span class="sc0">
+                    </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+                </span><span class="sc1">&lt;/xs:sequence&gt;</span><span class="sc0">
+              </span><span class="sc1">&lt;/xs:complexType&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/xs:sequence&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/xs:complexType&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;xs:unique</span><span class="sc8"> </span><span class="sc3">name</span><span class="sc8">=</span><span class="sc6">"uniquehardwareChannel"</span><span class="sc1">&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;xs:selector</span><span class="sc8"> </span><span class="sc3">xpath</span><span class="sc8">=</span><span class="sc6">"channel"</span><span class="sc11">/&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;xs:field</span><span class="sc8"> </span><span class="sc3">xpath</span><span class="sc8">=</span><span class="sc6">"hardwareChannel"</span><span class="sc11">/&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/xs:unique&gt;</span><span class="sc0">
+  </span><span class="sc1">&lt;/xs:element&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/xs:schema&gt;</span></div></body>
+</html>

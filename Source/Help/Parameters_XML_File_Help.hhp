@@ -1,0 +1,19 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=XML Parameters File Ballard Arinc-429.chm
+Contents file=Table of Contents.hhc
+Default topic=Main_Page.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=XML Parameters File for Ballard Arinc-429
+
+
+[FILES]
+Main_Page.htm
+XML Parameters Files Examples.htm
+XML Tags.htm
+XML Schema.htm
+
+[INFOTYPES]
+
