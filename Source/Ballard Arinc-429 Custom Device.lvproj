@@ -305,6 +305,7 @@
 			<Item Name="Read XML HW Configuration File_Extra Checks.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks.vi"/>
 			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi"/>
 			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Tx Label Rates For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Tx Label Rates For Each hardWareChannel.vi"/>
 			<Item Name="Read XML HW Configuration File_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels.vi"/>
 			<Item Name="Read XML Parameters File_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data.vi"/>
 			<Item Name="Read XML Parameters File_Parse Read Data_Convert sdi element.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data_Convert sdi element.vi"/>
@@ -348,7 +349,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{070C9F20-3501-4F7B-B856-819CBBE53E11}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E4CE6EBD-D696-448F-9409-7D34F4FAB19F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -781,6 +782,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Read XML HW Configuration File_Extra Checks.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks.vi"/>
 			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Name Uniqueness For Each hardWareChannel.vi"/>
 			<Item Name="Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Label Settings Uniqueness For Each hardWareChannel.vi"/>
+			<Item Name="Read XML HW Configuration File_Extra Checks_Check Tx Label Rates For Each hardWareChannel.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Extra Checks_Check Tx Label Rates For Each hardWareChannel.vi"/>
 			<Item Name="Read XML HW Configuration File_Parse Channels.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels.vi"/>
 			<Item Name="Read XML Parameters File_Parse Read Data.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data.vi"/>
 			<Item Name="Read XML Parameters File_Parse Read Data_Convert sdi element.vi" Type="VI" URL="../System Explorer/SubVIs/Parse Parameters File/Read XML Parameters File_Parse Read Data_Convert sdi element.vi"/>
