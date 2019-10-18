@@ -1,6 +1,6 @@
-## Ballard ARINC 429 Custom Device ##
+	## Ballard ARINC 429 Custom Device ##
 
-**Ballard ARINC 429 Custom Device** allows users to use the [Ballard ARINC 429 devices](http://www.ni.com/en-ca/shop/select/pxi-arinc-429-interface-module) inside NI VeriStand. This is an avionic interface bus standard.
+**Ballard ARINC-429 Custom Device** allows users to use the [Ballard ARINC 429 devices](http://www.ni.com/en-ca/shop/select/pxi-arinc-429-interface-module) inside NI VeriStand. This is an avionic interface bus standard. It's important to note that supported hardware are the "NI-Keyed boards only", product Part Number should have the form: “LV-###-###-###.”
 
 
 ### LabVIEW Version ###
