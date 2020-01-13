@@ -1,0 +1,6 @@
+D:\MS Project\MS Project\obj\Debug\readData.csproj.CoreCompileInputs.cache
+D:\MS Project\MS Project\bin\Debug\Ballard_BTI_XML_Deserializer.dll
+D:\MS Project\MS Project\bin\Debug\Ballard_BTI_XML_Deserializer.pdb
+D:\MS Project\MS Project\obj\Debug\Ballard_BTI_XML_Deserializer.dll
+D:\MS Project\MS Project\obj\Debug\Ballard_BTI_XML_Deserializer.pdb
+D:\MS Project\MS Project\obj\Debug\readData.csprojResolveAssemblyReference.cache

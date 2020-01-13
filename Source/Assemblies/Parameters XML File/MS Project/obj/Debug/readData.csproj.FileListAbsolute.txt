@@ -1,0 +1,18 @@
+D:\MS Project\MS Project\obj\Debug\readData.csproj.CoreCompileInputs.cache
+D:\MS Project\MS Project\bin\Debug\Ballard_BTI_XML_Deserializer.dll
+D:\MS Project\MS Project\bin\Debug\Ballard_BTI_XML_Deserializer.pdb
+D:\MS Project\MS Project\obj\Debug\Ballard_BTI_XML_Deserializer.dll
+D:\MS Project\MS Project\obj\Debug\Ballard_BTI_XML_Deserializer.pdb
+D:\MS Project\MS Project\obj\Debug\readData.csprojResolveAssemblyReference.cache
+D:\Parameters import\XML Assembly MS Project\MS Project\bin\Debug\Parameters_Arinc429_XML_Deserializer.dll
+D:\Parameters import\XML Assembly MS Project\MS Project\bin\Debug\Parameters_Arinc429_XML_Deserializer.pdb
+D:\Parameters import\XML Assembly MS Project\MS Project\obj\Debug\readData.csproj.CoreCompileInputs.cache
+D:\Parameters import\XML Assembly MS Project\MS Project\obj\Debug\Parameters_Arinc429_XML_Deserializer.dll
+D:\Parameters import\XML Assembly MS Project\MS Project\obj\Debug\Parameters_Arinc429_XML_Deserializer.pdb
+D:\Parameters import\XML Assembly MS Project\MS Project\obj\Debug\readData.csprojResolveAssemblyReference.cache
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\bin\Debug\Parameters_Arinc429_XML_Tools.dll
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\bin\Debug\Parameters_Arinc429_XML_Tools.pdb
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\obj\Debug\readData.csproj.CoreCompileInputs.cache
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\obj\Debug\Parameters_Arinc429_XML_Tools.dll
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\obj\Debug\Parameters_Arinc429_XML_Tools.pdb
+D:\Arinc-429_Parameters import\XML Assembly MS Project\MS Project\obj\Debug\readData.csprojResolveAssemblyReference.cache
