@@ -18,6 +18,7 @@ This IP is new.
 ### Built Dependencies ###
 
 [Astronics Ballard LabVIEW Driver 1.3.0.4 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
+*tests on LinuxRT are done with 1.3.1 release [Updated 09/28/2020]
 
 ### Source Dependencies ###
 
