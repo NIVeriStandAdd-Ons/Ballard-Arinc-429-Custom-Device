@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<channel429 ID="2" name="MyChannel2" selfTestBus="true" xmlns="http://www.ballardtech.com/DatabusSchemas/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="./bti.xsd">
+	<txChannel scheduleMode="Explicit" scheduleIDRef="111">
+		<messages>
+			<message ID="1" name="MyTXLabel1" labelDecimal="138" messageBufferIDRef="11">
+				<messageBuffers>
+					<messageBuffer ID="11">
+						<rawData>AAAAAAAA</rawData>
+					</messageBuffer>
+				</messageBuffers>
+			</message>
+			<message ID="2" name="MyTXLabel2" labelDecimal="134" messageBufferIDRef="22">
+				<messageBuffers>
+					<messageBuffer ID="22">
+						<rawData>BBBBBBBB</rawData>
+					</messageBuffer>
+				</messageBuffers>
+			</message>
+		</messages>
+		<schedules>
+			<schedule ID="111" name="MySchedule1">
+				<schedMessageRef messageIDRef="1"/>
+				<schedMessageRef messageIDRef="2"/>
+				<schedGap gapBitTimes="495"/>
+				<schedMessageRef messageIDRef="1"/>
+				<schedGap gapBitTimes="531"/>
+			</schedule>
+		</schedules>
+	</txChannel>	
+</channel429>

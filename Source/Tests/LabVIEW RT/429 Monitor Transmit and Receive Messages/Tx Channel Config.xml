@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="2" name="MyChannel2" monitorMode="All" selfTestBus="true">
+	<bti:txChannel scheduleMode="Rate">
+		<bti:messages>
+			<bti:message ID="1" name="MyMessage1" messageBufferIDRef="11" minRate="250" maxRate="500" labelDecimal="134">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="11">
+						<bti:rawData>AAAAAAAA</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+			<bti:message ID="2" name="MyMessage2" messageBufferIDRef="22" minRate="250" maxRate="500" labelDecimal="136">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="22">
+						<bti:rawData>BBBBBBBB</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+			<bti:message ID="3" name="MyMessage3" messageBufferIDRef="33" maxRate="250" labelDecimal="137">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="33">
+						<bti:rawData>CCCCCCCC</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+		</bti:messages>
+	</bti:txChannel>
+</bti:channel429>

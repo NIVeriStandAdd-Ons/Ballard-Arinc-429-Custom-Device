@@ -1,0 +1,18 @@
+﻿<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="1" name="MyChannel1" timeOrHitCount="None">
+	<bti:txChannel scheduleIDRef="-1" speedKHz="100" scheduleMode="Rate" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
+		<bti:asyncMessageList/>
+		<bti:messages>
+			<bti:message ID="1" name="MyMsg" messageBufferIDRef="11" monitor="true" timeOrHitCount="HitCount">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="11" name="MyBuf" bufferMaxEntries="1" bufferType="FIFO">
+						<bti:rawData>00000000</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+				<bti:triggerInputs>
+					<bti:triggerInput line="PXITRIGA" polarity="Rise" condition="Active" />
+				</bti:triggerInputs>
+			</bti:message>
+		</bti:messages>
+		<bti:schedules/>
+	</bti:txChannel>
+</bti:channel429>

@@ -1,0 +1,9 @@
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="RXChan429RootName" schemaVersion="1.0" selfTestBus="true">
+	<bti:rxChannel speed="Auto">
+		<bti:labels>
+			<bti:label ID="2" name="RXMsg" labelDecimal="134">
+				<bti:labelBuffer bufferMaxEntries="15"/>
+			</bti:label>
+		</bti:labels>
+	</bti:rxChannel>
+</bti:channel429>

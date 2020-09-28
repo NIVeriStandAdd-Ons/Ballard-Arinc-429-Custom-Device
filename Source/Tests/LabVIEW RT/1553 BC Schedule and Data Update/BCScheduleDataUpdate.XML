@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bti:channel1553 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2" amplitudePercent="50" schemaVersion="1.0" hardwareChannel="0">
+		<bti:simulation>
+			<bti:busMonitor ID="3"/>
+			<bti:busController ID="4" defaultGap="8" timeout="19" scheduleIDRef="11">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="1" name="string" bufferMaxEntries="1" bufferType="FIFO">
+						<bti:messageData>
+							<bti:messageDataWord>0000</bti:messageDataWord>
+							<bti:messageDataWord>0000</bti:messageDataWord>
+							<bti:messageDataWord>0000</bti:messageDataWord>
+						</bti:messageData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+				<bti:messages>
+					<bti:messageCommand ID="5" name="MyTransfer1" messageBufferIDRef="1" retryCount="0">
+						<bti:messageBCRT taVal1="1" saVal1="2" wordCount1="3"/>
+					</bti:messageCommand>
+					<bti:messageCommand ID="6" name="MyTransfer2" retryCount="0">
+						<bti:messageRTBC taVal1="1" saVal1="1" wordCount1="1"/>
+					</bti:messageCommand>
+					<bti:messageCommand ID="7" name="MyRTRTTransfer" retryCount="0">
+						<bti:messageRTRT taVal1="1" saVal1="1" wordCount1="1" taVal2="3" saVal2="1" wordCount2="1"/>
+					</bti:messageCommand>
+				</bti:messages>
+				<bti:minorFrames>
+					<bti:minorFrame ID="8" name="MinorFrame1" frameTime="200">
+						<bti:commandMessageRef messageIDRef="5"/>
+						<bti:commandMessageRef messageIDRef="6"/>
+						<bti:commandMessageRef messageIDRef="7"/>
+					</bti:minorFrame>
+					<bti:minorFrame ID="9" name="MinorFrame2" frameTime="200">
+						<bti:commandMessageRef messageIDRef="5"/>
+					</bti:minorFrame>
+					<bti:minorFrame ID="10" name="MinorFrame3" frameTime="200">
+						<bti:commandMessageRef messageIDRef="5"/>
+						<bti:commandMessageRef messageIDRef="6"/>
+					</bti:minorFrame>
+				</bti:minorFrames>
+				<bti:majorFrames>
+					<bti:majorFrame ID="11" name="majorFrame" loopCount="0">
+						<bti:minorFrameRef minorFrameIDRef="8"/>
+						<bti:minorFrameRef minorFrameIDRef="9"/>
+						<bti:minorFrameRef minorFrameIDRef="10"/>
+						<bti:minorFrameRef minorFrameIDRef="9"/>
+					</bti:majorFrame>
+				</bti:majorFrames>
+				<bti:acyclicFrames/>
+			</bti:busController>
+			<bti:remoteTerminals/>
+		</bti:simulation>
+	</bti:channel1553>

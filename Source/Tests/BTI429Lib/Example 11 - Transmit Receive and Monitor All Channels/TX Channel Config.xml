@@ -1,0 +1,14 @@
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="Chan429RootName" schemaVersion="1.0">
+	<bti:txChannel speedKHz="100" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8" scheduleIDRef="3">
+		<bti:asyncMessageList/>
+		<bti:messages>
+			<bti:message ID="2" name="TXMsg" monitor="true" labelDecimal="134"/>
+		</bti:messages>
+		<bti:schedules>
+			<bti:schedule ID="3" name="schedule">
+				<bti:schedMessageRef messageIDRef="2"/>
+				<bti:schedGap gapBitTimes="1218"/>
+			</bti:schedule>
+		</bti:schedules>
+	</bti:txChannel>
+</bti:channel429>
