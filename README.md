@@ -5,7 +5,7 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2019
+LabVIEW 2019 and later
 
 ### Built Availability ###
 
