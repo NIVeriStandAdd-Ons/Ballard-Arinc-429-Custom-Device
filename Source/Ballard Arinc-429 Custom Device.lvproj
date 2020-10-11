@@ -349,7 +349,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E4CE6EBD-D696-448F-9409-7D34F4FAB19F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{74B7207B-3F0C-4105-9066-8F807076BAD7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -831,7 +831,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/NI_AB_TARGETNAME/Data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A98E9850-174B-4E53-BF65-5F67D04D50A1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04668975-738E-4B48-9E72-FDA945FF8465}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
