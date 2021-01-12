@@ -884,7 +884,7 @@ AddOutputFilter chunkFilter
 	<Item Name="LinuxRT" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">LinuxRT</Property>
 		<Property Name="alias.value" Type="Str">10.96.1.35</Property>
-		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;debug,False;Run_Async_VI,True;Enable_Ballard_Calls,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -1305,7 +1305,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{48968CDC-A38F-44AB-935D-5DAE2C1B25B5}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/Ballard - Arinc-429 Engine.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/Ballard - Arinc-429 Engine.llb</Property>
@@ -1315,7 +1315,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{B88783A2-F35D-4749-B720-F775DC7B5CEE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CA438B48-A7CE-4A3C-84E9-E72BAAA8D853}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/LinuxRT/Ballard Arinc-429 Engine.lvlib/Ballard - Arinc-429 RT Driver VI.vi</Property>
