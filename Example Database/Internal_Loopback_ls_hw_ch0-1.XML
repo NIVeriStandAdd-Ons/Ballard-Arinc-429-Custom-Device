@@ -1,0 +1,29 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="-1" name="CoreName" schemaVersion="1.0">
+	<bti:coreConfiguration>
+		<bti:sequentialLog perChannelStreaming="false"/>
+		<bti:builtInTest/>
+		<bti:pxi/>
+		<bti:sysMon/>
+		<bti:timing/>
+	</bti:coreConfiguration>
+	<bti:channel429 ID="0" name="CH0" hardwareChannel="0" selfTestBus="true">
+		<bti:rxChannel speedKHz="12.5">
+			<bti:labels>
+				<bti:label ID="134" name="label 134" monitor="true" labelDecimal="134"/>
+			</bti:labels>
+		</bti:rxChannel>
+	</bti:channel429>
+	<bti:channel429 ID="28" name="CH17" hardwareChannel="17" selfTestBus="true">
+		<bti:txChannel speedKHz="12.5" scheduleMode="Rate" scheduleBuildUnit="Microsecond" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
+			<bti:messages>
+				<bti:message ID="134" name="label 134" messageBufferIDRef="128" minRate="2880" maxRate="2880" labelDecimal="134">
+					<bti:messageBuffers>
+						<bti:messageBuffer ID="128" name="MessageBuffer">
+							<bti:rawData>AAAAAAAA</bti:rawData>
+						</bti:messageBuffer>
+					</bti:messageBuffers>
+				</bti:message>
+			</bti:messages>
+		</bti:txChannel>
+	</bti:channel429>
+</bti:core>
