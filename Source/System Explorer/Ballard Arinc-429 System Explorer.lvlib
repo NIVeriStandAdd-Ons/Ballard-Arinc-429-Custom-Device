@@ -87,8 +87,10 @@
 				<Item Name="Read_XML_Parameters File_002.vi" Type="VI" URL="../SubVIs/Parse Parameters File/Read_XML_Parameters File_002.vi"/>
 			</Item>
 			<Item Name="Parse XML Ballard" Type="Folder">
-				<Item Name="Ballard_BTI_XML_Deserializer.dll" Type="Document" URL="../SubVIs/Parse XML Ballard/Ballard_BTI_XML_Deserializer.dll"/>
-				<Item Name="BTI.XSD" Type="Document" URL="../SubVIs/Parse XML Ballard/BTI.XSD"/>
+				<Item Name="1.2" Type="Folder">
+					<Item Name="BTI.xsd" Type="Document" URL="../SubVIs/Parse XML Ballard/1.2/BTI.xsd"/>
+					<Item Name="BTIXML_SerDes.dll" Type="Document" URL="../SubVIs/Parse XML Ballard/1.2/BTIXML_SerDes.dll"/>
+				</Item>
 				<Item Name="Check XML File against XSD Schema.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Check XML File against XSD Schema.vi"/>
 				<Item Name="Read XML HW Configuration File_002.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_002.vi"/>
 				<Item Name="Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi"/>

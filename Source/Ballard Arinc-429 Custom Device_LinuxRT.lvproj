@@ -293,6 +293,7 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Convert String to Byte Array.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Convert String to Byte Array.vi"/>
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -351,7 +352,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{18A9FD3E-D23A-406B-88D7-F35EFA522059}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6C78FEB8-BF78-46DB-A0A8-283E9EC20D69}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -742,7 +743,7 @@ AddOutputFilter chunkFilter
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/Targets/NI/RT/vi.lib/NI_Real-Time Target Support.lvlib"/>
+				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
@@ -770,6 +771,7 @@ AddOutputFilter chunkFilter
 			<Item Name="BTICardLV.dll" Type="Document" URL="BTICardLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Convert String to Byte Array.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Convert String to Byte Array.vi"/>
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
 			<Item Name="Insert BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Insert BCD Parameter.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -1222,7 +1224,7 @@ AddOutputFilter chunkFilter
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/Targets/NI/RT/vi.lib/NI_Real-Time Target Support.lvlib"/>
+				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeristand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Data/NIVeristand_DataServices.dll"/>
@@ -1250,6 +1252,7 @@ AddOutputFilter chunkFilter
 			<Item Name="BTICardLV.dll" Type="Document" URL="BTICardLV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Convert String to Byte Array.vi" Type="VI" URL="../System Explorer/SubVIs/Parse XML Ballard/Convert String to Byte Array.vi"/>
 			<Item Name="Extract BCD Parameter.vi" Type="VI" URL="../RT Driver/SubVIs/ReadWrite/Extract BCD Parameter.vi"/>
 			<Item Name="Get First 429 Rx Channel.vi" Type="VI" URL="../Tests/LabVIEW RT/subVIs/Get First 429 Rx Channel.vi"/>
 			<Item Name="Get First 429 Tx Channel.vi" Type="VI" URL="../Tests/LabVIEW RT/subVIs/Get First 429 Tx Channel.vi"/>
@@ -1307,7 +1310,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{48968CDC-A38F-44AB-935D-5DAE2C1B25B5}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/Ballard - Arinc-429 Engine.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/Ballard - Arinc-429 Engine.llb</Property>

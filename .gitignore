@@ -63,3 +63,7 @@ $RECYCLE.BIN/
 
 # Repo-specific ignores
 /Built
+Source/Assemblies/HW XML File/MS Project/bin
+Source/Assemblies/HW XML File/MS Project/obj
+Source/Assemblies/HW XML File/1.2/bin
+Source/Assemblies/HW XML File/1.2/obj

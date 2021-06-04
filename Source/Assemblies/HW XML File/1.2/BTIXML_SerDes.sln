@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTIXML_SerDes", "BTIXML_SerDes.csproj", "{F0CC1E63-15A8-46D6-8BB8-C08857E6A67F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0CC1E63-15A8-46D6-8BB8-C08857E6A67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0CC1E63-15A8-46D6-8BB8-C08857E6A67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0CC1E63-15A8-46D6-8BB8-C08857E6A67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0CC1E63-15A8-46D6-8BB8-C08857E6A67F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {330C58A1-8D53-4B16-8EC8-2115A56F634E}
+	EndGlobalSection
+EndGlobal
