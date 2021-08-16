@@ -36,7 +36,7 @@
 				<startBit>18</startBit>
 				<numberOfBits>10</numberOfBits>
 				<name>Altitude_Rx</name>
-				<scale>16</scale>
+				<scale>1</scale>
 				<offset>0.0</offset>
 				<unit>psi</unit>
 			</parameter>
@@ -53,7 +53,7 @@
 				<startBit>18</startBit>
 				<numberOfBits>10</numberOfBits>
 				<name>Altitude_Tx</name>
-				<scale>16</scale>
+				<scale>1</scale>
 				<offset>0.0</offset>
 				<unit>psi</unit>
 				<defaultValue>0</defaultValue>
