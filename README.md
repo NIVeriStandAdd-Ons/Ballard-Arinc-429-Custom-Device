@@ -5,11 +5,11 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2019 and later
+LabVIEW 2020 and later
 
 ### Built Availability ###
 
-(In work) Builds available for VeriStand 2019 & 2020 under releases.
+NONE.
 
 ### Quality, Limitations ###
 
@@ -17,12 +17,11 @@ This IP is new.
 
 ### Built Dependencies ###
 
-[Astronics Ballard LabVIEW Driver 1.3.0.4 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
-*tests on LinuxRT are done with 1.3.1 release [Updated 09/28/2020]
+[Astronics Ballard LabVIEW Driver 1.3.1.1 or Higher] 
 
 ### Source Dependencies ###
 
-[Astronics Ballard LabVIEW Driver 1.3.0.4 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
+[Astronics Ballard LabVIEW Driver 1.3.1.1 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
 
 [OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
 
