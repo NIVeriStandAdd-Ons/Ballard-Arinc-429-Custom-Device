@@ -5,11 +5,7 @@
     <eng>Ballard - Arinc-429</eng>
     <loc>Ballard - Arinc-429</loc>
   </AddMenu>
-<<<<<<< HEAD
-  <Version>1.9.4</Version>
-=======
   <Version>1.9.5</Version>
->>>>>>> remotes/origin/dev2020
   <Type>Inline HW Interface</Type>
   <MaxOccurrence>64</MaxOccurrence>
   <MainPageGUID>dcf168dc-a9fa-4dd1-862e-68da37a31a51</MainPageGUID>
