@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="Chan429RootName" schemaVersion="1.0" monitorMode="All">
+	<bti:rxChannel speedKHz="100" defaultBufferMonitor="true"/>
+</bti:channel429>

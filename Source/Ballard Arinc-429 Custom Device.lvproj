@@ -1,5 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="20008000">
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -244,7 +246,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
 				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -349,7 +351,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Ballard - Arinc-429/Ballard - Arinc-429 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E4CE6EBD-D696-448F-9409-7D34F4FAB19F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{18A9FD3E-D23A-406B-88D7-F35EFA522059}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
@@ -407,8 +409,8 @@
 			</Item>
 		</Item>
 	</Item>
-	<Item Name="RT PXI Target" Type="RT PXI Chassis">
-		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
+	<Item Name="Pharlap" Type="RT PXI Chassis">
+		<Property Name="alias.name" Type="Str">Pharlap</Property>
 		<Property Name="alias.value" Type="Str">10.1.130.22</Property>
 		<Property Name="CCSymbols" Type="Str">OS,PharLap;CPU,x86;debug,false;Run_Async_VI,True;Enable_Ballard_Calls,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -484,9 +486,14 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+<<<<<<< HEAD
 		<Item Name="Inline Async API" Type="Folder">
 			<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 			<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
+=======
+		<Item Name="deps" Type="Folder">
+			<Item Name="BTI429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTI429Lib/BTI429LV.lvlib"/>
+>>>>>>> remotes/origin/dev2020
 		</Item>
 		<Item Name="NI VeriStand APIs" Type="Folder">
 			<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
@@ -496,7 +503,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Ballard Arinc-429 Shared.lvlib" Type="Library" URL="../Shared/Ballard Arinc-429 Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="BTI429LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTI429Lib/BTI429LV.lvlib"/>
 				<Item Name="BTICardLV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/BTICardLib/BTICardLV.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
@@ -711,7 +717,12 @@ AddOutputFilter chunkFilter
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+<<<<<<< HEAD
 				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+=======
+				<Item Name="Custom Device Offline API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device Offline API/Custom Device Offline API.lvlib"/>
+				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
+>>>>>>> remotes/origin/dev2020
 				<Item Name="Data Access System Explorer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access System Explorer/Data Access System Explorer.lvlib"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -824,18 +835,22 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_targetDestDir" Type="Path">/Pharlap/Ballard - Arinc-429 Engine.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/Pharlap/Ballard - Arinc-429 Engine.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/NI_AB_TARGETNAME/Ballard - Arinc-429 Engine.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/Pharlap/Data</Property>
+				<Property Name="Destination[1].path" Type="Path">/NI_AB_TARGETNAME/Data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+<<<<<<< HEAD
 				<Property Name="Source[0].itemID" Type="Str">{720232C7-2C83-43EC-9151-8050E2C47044}</Property>
+=======
+				<Property Name="Source[0].itemID" Type="Str">{684500A8-07D5-42A6-8FB4-1F1D1B7B6D6C}</Property>
+>>>>>>> remotes/origin/dev2020
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/Ballard Arinc-429 Shared.lvlib/Shared</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Pharlap/Ballard Arinc-429 Shared.lvlib/Shared</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -851,7 +866,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target/NI VeriStand APIs</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/Pharlap/NI VeriStand APIs</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -865,15 +880,28 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/RT PXI Target/Ballard Arinc-429 Engine.lvlib/Ballard - Arinc-429 RT Driver VI.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/Pharlap/Ballard Arinc-429 Engine.lvlib/Ballard - Arinc-429 RT Driver VI.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
+<<<<<<< HEAD
 				<Property Name="Source[4].Container.applyPrefix" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/RT PXI Target/Inline Async API</Property>
 				<Property Name="Source[4].newName" Type="Str">Arinc_429_</Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
+=======
+				<Property Name="Source[4].itemID" Type="Ref">/Pharlap/deps/BTI429LV.lvlib/Private/Utility/Build Last Error Info.vi</Property>
+				<Property Name="Source[4].newName" Type="Str">429 Build Last Error Info.vi</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/Pharlap/deps/BTI429LV.lvlib/Private/Utility/Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[5].newName" Type="Str">429 Error Converter (ErrCode or Status).vi</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/Pharlap/deps/BTI429LV.lvlib/Public/Controls/Error Info.ctl</Property>
+				<Property Name="Source[6].newName" Type="Str">429 Error Info.ctl</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
+>>>>>>> remotes/origin/dev2020
 			</Item>
 		</Item>
 	</Item>

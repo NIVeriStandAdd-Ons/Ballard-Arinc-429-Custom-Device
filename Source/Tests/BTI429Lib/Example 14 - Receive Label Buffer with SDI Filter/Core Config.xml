@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ballardtech.com/DatabusSchemas/ file:///C:/Working/96081%20-%20LabVIEW%20Library/XSD/BTI.xsd" ID="-2749" name="string">
+    <bti:coreConfiguration>
+		<bti:sequentialLog />
+	</bti:coreConfiguration>
+</bti:core>

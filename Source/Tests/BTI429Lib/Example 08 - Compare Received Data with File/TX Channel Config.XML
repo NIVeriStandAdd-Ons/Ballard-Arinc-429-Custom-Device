@@ -1,0 +1,12 @@
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="Chan429RootName" schemaVersion="1.0" selfTestBus="true">
+	<bti:txChannel speedKHz="100" scheduleMode="Rate" highVolt="10" lowVolt="-10" nullVolt="0" cmBiasVolt="0" highRiseTime="1.8" lowRiseTime="1.8">
+		<bti:asyncMessageList/>
+		<bti:messages>
+			<bti:message ID="2" name="TXMsg" messageBufferIDRef="3" labelDecimal="134" minRate="100" maxRate="200">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="3" name="" bufferMaxEntries="16" bufferType="FIFO"/>
+				</bti:messageBuffers>
+			</bti:message>
+		</bti:messages>
+	</bti:txChannel>
+</bti:channel429>

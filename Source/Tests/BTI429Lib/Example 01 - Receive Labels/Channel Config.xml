@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<channel429 ID="1" name="MyChannel1" xmlns="http://www.ballardtech.com/DatabusSchemas/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="./bti.xsd">
+	<rxChannel speed="Auto" autoLabelFilterMode="None" defaultBufferMonitor="true">
+		<labels>
+			<label ID="1" name="MyLabel1" labelDecimal="134">
+			</label>
+			<label ID="2" name="MyLabel2" labelDecimal="137">
+			</label>
+		</labels>
+	</rxChannel>	
+</channel429>

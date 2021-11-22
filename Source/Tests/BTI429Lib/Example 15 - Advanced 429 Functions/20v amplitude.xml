@@ -1,0 +1,27 @@
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="1" name="MyChannel1">
+	<bti:txChannel speedKHz="100" parametricMode="Wave" scheduleMode="Rate" highVolt="20" lowVolt="-20" nullVolt="0" cmBiasVolt="0">
+		<bti:messages>
+			<bti:message ID="1" name="MyLabel1" messageBufferIDRef="11" minRate="250" maxRate="500" labelDecimal="134">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="11">
+						<bti:rawData>AAAAAAAA</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+			<bti:message ID="2" name="MyLabel2" messageBufferIDRef="22" minRate="250" maxRate="500" labelDecimal="136">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="22">
+						<bti:rawData>BBBBBBBB</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+			<bti:message ID="3" name="MyLabel3" messageBufferIDRef="33" maxRate="250" labelDecimal="137">
+				<bti:messageBuffers>
+					<bti:messageBuffer ID="33">
+						<bti:rawData>CCCCCCCC</bti:rawData>
+					</bti:messageBuffer>
+				</bti:messageBuffers>
+			</bti:message>
+		</bti:messages>
+	</bti:txChannel>
+</bti:channel429>

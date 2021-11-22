@@ -1,0 +1,18 @@
+<bti:channel429 xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="1" name="MyChannel1">
+	<bti:rxChannel speedKHz="100" autoLabelFilterMode="None">
+		<bti:labels>
+			<bti:label ID="1" name="MySDI00" labelDecimal="134" SDI="00">
+				<bti:labelBuffer bufferMaxEntries="15"/>
+			</bti:label>
+			<bti:label ID="2" name="MySDI01" labelDecimal="134" SDI="01">
+				<bti:labelBuffer bufferMaxEntries="15"/>
+			</bti:label>
+			<bti:label ID="3" name="MySDI10" labelDecimal="134" SDI="10">
+				<bti:labelBuffer bufferMaxEntries="15"/>
+			</bti:label>
+			<bti:label ID="4" name="MySDI11" labelDecimal="134" SDI="11">
+				<bti:labelBuffer bufferMaxEntries="15"/>
+			</bti:label>
+		</bti:labels>
+	</bti:rxChannel>
+</bti:channel429>

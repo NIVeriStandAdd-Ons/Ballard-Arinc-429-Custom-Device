@@ -1,0 +1,10 @@
+<bti:channel429 ID="2" name="MyTxChannel" monitorMode="Selective" xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ballardtech.com/DatabusSchemas/ file:./BTI.xsd">
+	<bti:txChannel speedKHz="100" scheduleMode="Explicit" scheduleIDRef="4">
+		<bti:asyncMessageList/>
+		<bti:schedules>
+			<bti:schedule ID="4" name="schedule">
+				<bti:schedGap gapBitTimes="36"/>
+			</bti:schedule>
+		</bti:schedules>
+	</bti:txChannel>
+</bti:channel429>

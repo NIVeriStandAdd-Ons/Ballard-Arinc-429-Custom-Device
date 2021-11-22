@@ -5,11 +5,11 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2016
+LabVIEW 2020
 
 ### Built Availability ###
 
-Builds available for VeriStand 2016 , 2017 , 2018 , 2019 & 2020 under releases.
+Builds available for VeriStand 2020 under releases.
 
 ### Quality, Limitations ###
 
@@ -17,24 +17,22 @@ This IP is new.
 
 ### Built Dependencies ###
 
-[Astronics Ballard LabVIEW Driver 1.3.0.4 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
+[Astronics Ballard LabVIEW Driver 1.3.1.1 or Higher] 
 
 ### Source Dependencies ###
 
-[Astronics Ballard LabVIEW Driver 1.3.0.4 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
+[Astronics Ballard LabVIEW Driver 1.3.1.1 or Higher] https://www.ni.com/en-us/support/downloads/drivers/download.astronics-ballard-avionics-driver.html#343843
 
 [OpenG Array Library 4.1.1.14 or Higher] vipm://oglib_array?repo_url=http://www.jkisoft.com/packages
 
 [OpenG MD5 Digest Library 4.1.1.10 or Higher] vipm://oglib_md5?repo_url=http://www.jkisoft.com/packages
 
-[NI VeriStand Addon Inline-Async-APIs 1.0.0 or Higher] https://github.com/ni/niveristand-custom-device-inline-async-api/releases/tag/v1.0.0
+[VeriStand Custom Device Development Tools 20.3.0 or Higher] https://github.com/ni/niveristand-custom-device-development-tools/releases
 
 Code uses 2 .NET Assemblies compiled into DLLs. The source code is available here:
 - Hardware XML File: https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device/tree/master/Source/Assemblies/HW%20XML%20File/
 - Parameters XML File: https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device/tree/master/Source/Assemblies/Parameters%20XML%20File
 
-
-VIs must be renamed in BTI429LV.lvlib to prevent naming collision during compilation see User Readme.rtf
 
 ### License ###
 

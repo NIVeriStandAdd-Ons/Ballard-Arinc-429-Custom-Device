@@ -1,0 +1,5 @@
+<bti:core xmlns:bti="http://www.ballardtech.com/DatabusSchemas/" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" ID="0" name="CoreName" schemaVersion="1.0">
+	<bti:coreConfiguration>
+		<bti:sequentialLog/>
+	</bti:coreConfiguration>
+</bti:core>
