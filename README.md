@@ -5,11 +5,11 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2020 and later
+LabVIEW 2020
 
 ### Built Availability ###
 
-NONE.
+Builds available for VeriStand 2020 under releases.
 
 ### Quality, Limitations ###
 
