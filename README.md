@@ -33,6 +33,7 @@ Code uses 2 .NET Assemblies compiled into DLLs. The source code is available her
 - Hardware XML File: https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device/tree/master/Source/Assemblies/HW%20XML%20File/
 - Parameters XML File: https://github.com/NIVeriStandAdd-Ons/Ballard-Arinc-429-Custom-Device/tree/master/Source/Assemblies/Parameters%20XML%20File
 
+VIs must be renamed in BTI429LV.lvlib to prevent naming collision during compilation see User Readme.rtf
 
 ### License ###
 
