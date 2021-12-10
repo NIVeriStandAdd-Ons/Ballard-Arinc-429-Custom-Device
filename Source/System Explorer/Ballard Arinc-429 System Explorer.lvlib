@@ -93,6 +93,7 @@
 				</Item>
 				<Item Name="Check XML File against XSD Schema.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Check XML File against XSD Schema.vi"/>
 				<Item Name="Read XML HW Configuration File_002.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_002.vi"/>
+				<Item Name="Read XML HW Configuration File_Parse Channels_Extract Fields From RawData.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels_Extract Fields From RawData.vi"/>
 				<Item Name="Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi" Type="VI" URL="../SubVIs/Parse XML Ballard/Read XML HW Configuration File_Parse Channels_Tx Channels Detect ID Mismatch.vi"/>
 			</Item>
 			<Item Name="Refresh DB" Type="Folder">
